@@ -4,3 +4,11 @@
 
 # infographiq
 Overview documentation (in bookdown) for creating intelligent interactive infographics, ie infographiq
+
+
+## Github Action to Netlify
+
+But why? Answer should be here:
+
+* [Deploy your bookdown project to Netlify with Github Actions | Emil Hvitfeldt](https://www.hvitfeldt.me/blog/bookdown-netlify-github-actions/)
+* [Examples for `use_github_action()`](https://github.com/r-lib/actions/tree/master/examples#example-workflows)
