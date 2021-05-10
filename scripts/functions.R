@@ -12,38 +12,49 @@ deploy_bookdown <- function(
   #     github_pages = T),
   #   envir = globalenv())
 
-  if (!require(librarian)){
-    install.packages("librarian")
-    library(librarian)
-  }
-  shelf(
-    fs)
+  # if (!require(librarian)){
+  #   install.packages("librarian")
+  #   library(librarian)
+  # }
+  # shelf(
+  #   fs)
 
   dest_dir <- fs::dir_create(fs::file_temp())
   on.exit(fs::dir_delete(dest_dir))
   if (!git_has_remote_branch(remote, branch)) {
     old_branch <- git_current_branch()
+
+    # If no remote branch, we need to create it
     git("checkout", "--orphan", branch)
     git("rm", "-rf", "--quiet", ".")
     git("commit", "--allow-empty", "-m", sprintf("Initializing %s branch",
                                                  branch))
     git("push", remote, paste0("HEAD:", branch))
+
+    # checkout the previous branch
     git("checkout", old_branch)
   }
+
+  # Explicitly set the branches tracked by the origin remote.
+  # Needed if we are using a shallow clone, such as on travis-CI
   git("remote", "set-branches", remote, branch)
+
   git("fetch", remote, branch)
+
   github_worktree_add(dest_dir, remote, branch)
   on.exit(github_worktree_remove(dest_dir), add = TRUE)
+
   #pkg -> bkd <- as_pkgdown(pkg, override = list(destination = dest_dir))
   if (clean) {
     rule("Cleaning files from old book", line = 1)
-    clean_book(bkd)
+    bookdown::clean_book(bkd)
   }
-  build_site(pkg, devel = FALSE, preview = FALSE, install = FALSE,
-             ...)
+
+  #build_site(pkg, devel = FALSE, preview = FALSE, install = FALSE, ...)
+  bookdown::render_book(quiet = quiet)
+
   if (github_pages) {
-    #build_github_pages(pkg)
-    bookdown::render_book(quiet = quiet)
+    #pkgdown:::build_github_pages(pkg) # .nojekyll, CNAME
   }
   github_push(dest_dir, commit_message, remote, branch)
   invisible()
