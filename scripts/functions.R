@@ -8,7 +8,7 @@ deploy_bookdown <- function(
   # list2env(
   #   list(
   #     bkd = ".", commit_message = construct_commit_message(bkd),
-  #     clean = FALSE, branch = "gh-pages", remote = "origin",
+  #     clean = FALSE, branch = "gh-pages", remote = "origin", quiet = F,
   #     github_pages = T),
   #   envir = globalenv())
 
@@ -43,6 +43,8 @@ deploy_bookdown <- function(
 
   github_worktree_add(dest_dir, remote, branch)
   on.exit(github_worktree_remove(dest_dir), add = TRUE)
+  # github_worktree_remove('/private/var/folders/2r/grqvdjfn04361tzk8mh60st40000gn/T/RtmpemxQ3G/file6261211f0247')
+  # cat(glue::glue("dest_dir={dest_dir}; ls -la $dest_dir"))
 
   #pkg -> bkd <- as_pkgdown(pkg, override = list(destination = dest_dir))
   if (clean) {
@@ -51,7 +53,7 @@ deploy_bookdown <- function(
   }
 
   #build_site(pkg, devel = FALSE, preview = FALSE, install = FALSE, ...)
-  bookdown::render_book(quiet = quiet)
+  bookdown::render_book(output_dir = dest_dir, quiet = quiet)
 
   if (github_pages) {
     #pkgdown:::build_github_pages(pkg) # .nojekyll, CNAME
