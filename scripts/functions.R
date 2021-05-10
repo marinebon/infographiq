@@ -49,6 +49,8 @@ deploy_bookdown <- function(
   invisible()
 }
 
+# ~pkgdown:/R/deploy-site.R ----
+
 git_has_remote_branch <- function(remote, branch) {
   has_remote_branch <- git("ls-remote", "--quiet", "--exit-code", remote, branch, echo = FALSE, echo_cmd = FALSE, error_on_status = FALSE)$status == 0
 }
@@ -114,4 +116,28 @@ ci_commit_sha <- function() {
   }
 
   ""
+}
+
+# ~pkgdown:/R/utils.r ----
+
+cat_line <- function(...) {
+  cat(paste0(..., "\n"), sep = "")
+}
+
+rule <- function(x = NULL, line = "-") {
+  width <- getOption("width")
+
+  if (!is.null(x)) {
+    prefix <- paste0(line, line, " ")
+    suffix <- " "
+  } else {
+    prefix <- ""
+    suffix <- ""
+    x <- ""
+  }
+
+  line_length <- width - nchar(x) - nchar(prefix) - nchar(suffix)
+  # protect against negative values which can result in narrow terminals
+  line_length <- max(0, line_length)
+  cat_line(prefix, crayon::bold(x), suffix, strrep(line, line_length))
 }
