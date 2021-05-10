@@ -1,14 +1,5 @@
-[![bookdown](https://github.com/marinebon/infographiq/actions/workflows/bookdown.yaml/badge.svg)](https://github.com/marinebon/infographiq/actions/workflows/bookdown.yaml)
+[![Build Status](https://travis-ci.com/rstudio/bookdown-demo.svg?branch=master)](https://travis-ci.com/rstudio/bookdown-demo)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3f767845-a5d9-4f1b-8938-d68f43eca2cc/deploy-status)](https://app.netlify.com/sites/infographiq/deploys)
+This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "[Get Started](https://bookdown.org/yihui/bookdown/get-started.html)" at https://bookdown.org/yihui/bookdown/ for how to compile this example into HTML. You may generate a copy of the book in `bookdown::pdf_book` format by calling `bookdown::render_book('index.Rmd', 'bookdown::pdf_book')`. More detailed instructions are available here https://bookdown.org/yihui/bookdown/build-the-book.html.
 
-# infographiq
-Overview documentation (in bookdown) for creating intelligent interactive infographics, ie infographiq
-
-
-## Github Action to Netlify
-
-But why? Answer should be here:
-
-* [Deploy your bookdown project to Netlify with Github Actions | Emil Hvitfeldt](https://www.hvitfeldt.me/blog/bookdown-netlify-github-actions/)
-* [Examples for `use_github_action()`](https://github.com/r-lib/actions/tree/master/examples#example-workflows)
+You can find the preview of this example at https://bookdown.org/yihui/bookdown-demo/.
