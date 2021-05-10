@@ -52,11 +52,13 @@ deploy_bookdown <- function(
     bookdown::clean_book(bkd)
   }
 
-  #build_site(pkg, devel = FALSE, preview = FALSE, install = FALSE, ...)
+  # build_site(pkg, devel = FALSE, preview = FALSE, install = FALSE, ...)
+  # TODO: generalize approach to building other outputs (eg pdf, docx) specified in _output.yml
   bookdown::render_book(output_dir = dest_dir, quiet = quiet)
 
   if (github_pages) {
-    #pkgdown:::build_github_pages(pkg) # .nojekyll, CNAME
+    #pkgdown:::build_github_pages(pkg)
+    # TODO: + .nojekyll, CNAME like above
   }
   github_push(dest_dir, commit_message, remote, branch)
   invisible()
@@ -153,4 +155,10 @@ rule <- function(x = NULL, line = "-") {
   # protect against negative values which can result in narrow terminals
   line_length <- max(0, line_length)
   cat_line(prefix, crayon::bold(x), suffix, strrep(line, line_length))
+}
+
+with_dir <- function(new, code) {
+  old <- setwd(dir = new)
+  on.exit(setwd(old))
+  force(code)
 }
