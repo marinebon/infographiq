@@ -1,6 +1,10 @@
-book_filename: "bookdown-demo"
+output_dir: "_book"
+book_filename: "infographiq"
+view: https://github.com/marinebon/infographiq/blob/main/%s
+edit: https://github.com/marinebon/infographiq/edit/main/%s
+history: https://github.com/marinebon/infographiq/commits/main/%s
+delete_merged_file: true
 language:
   ui:
     chapter_name: "Chapter "
-delete_merged_file: true
-output_dir: "_book"
+
