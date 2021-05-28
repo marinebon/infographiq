@@ -19,7 +19,7 @@ deploy_bookdown <- function(
   # shelf(
   #   fs)
 
-  dest_dir <- fs::dir_create(fs::file_temp())
+  dest_dir <<- fs::dir_create(fs::file_temp())
   on.exit(fs::dir_delete(dest_dir))
   if (!git_has_remote_branch(remote, branch)) {
     old_branch <- git_current_branch()
