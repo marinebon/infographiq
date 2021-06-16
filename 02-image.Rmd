@@ -1,0 +1,5 @@
+# Creating an Infographiq image
+
+Infographiq works with images that are 
+
+Here is a review of existing methods.
