@@ -4,6 +4,7 @@ view: https://github.com/marinebon/infographiq/blob/main/%s
 edit: https://github.com/marinebon/infographiq/edit/main/%s
 history: https://github.com/marinebon/infographiq/commits/main/%s
 delete_merged_file: true
+after_chapter_script: "scripts/copy_extra.R"
 language:
   ui:
     chapter_name: "Chapter "

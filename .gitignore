@@ -6,3 +6,8 @@ _book
 _bookdown_files
 .DS_Store
 **/.DS_Store
+infographiq.Rmd
+infographiq.html
+infographiq.knit.md
+infographiq_files
+libs
