@@ -1,4 +1,4 @@
-# Creating an Infographiq image (\#image_creation)
+# Creating an Infographiq image {#image_creation}
 
 Infographiq works with vector-based images that are set up in a very specific way. Here we provide instructions for two vector graphics packages: [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (requires a paid subscription) and [Inkscape](https://inkscape.org/) (free).
 
@@ -6,7 +6,7 @@ You'll also need the example folder for Infographiq, which provides a full worki
 
 You can see the working example [in action here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html).
 
-# Adobe Illustrator (\#illustrator)
+## Adobe Illustrator {#illustrator}
 
 This guide assumes you have a basic knowledge of using Illustrator ([here is a great series of tutorials](https://helpx.adobe.com/illustrator/tutorials.html)). In particular, you'll need to understand how layers work in Illustrator (and [here's a tutorial](https://helpx.adobe.com/illustrator/using/layers.html) for that).
 
@@ -70,7 +70,7 @@ To be used by Infographiq, the file must be exported in svg format. To do so:
 
 4.  The default for Illustrator is to add an "01" to your svg file name (so, "example.svg" becomes "example01.svg". Change the file name back to your desired choice.
 
-# Inkscape (\#inkscape)
+## Inkscape {#inkscape}
 
 This guide assumes you have a basic knowledge of using Inkscape ([here is a great series of tutorials](https://inkscape.org/learn/tutorials/)). In particular, you'll need to understand how layers work in Inkscape (and [here's a tutorial](https://roy-torley.github.io/Inkscape_Tutorial/Tutorial06/Tutorial06.html) for that).
 
