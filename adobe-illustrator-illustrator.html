@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Guide to Infographiq</title>
+  <title>Chapter 4 Adobe Illustrator (#illustrator) | Guide to Infographiq</title>
   <meta name="description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Guide to Infographiq" />
+  <meta property="og:title" content="Chapter 4 Adobe Illustrator (#illustrator) | Guide to Infographiq" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="marinebon/infographiq" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Guide to Infographiq" />
+  <meta name="twitter:title" content="Chapter 4 Adobe Illustrator (#illustrator) | Guide to Infographiq" />
   
   <meta name="twitter:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="getting-started.html"/>
+<link rel="prev" href="creating-an-infographiq-image-image-creation.html"/>
+<link rel="next" href="inkscape-inkscape.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,34 +101,60 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Guide to Infographiq</h1>
-<p class="author"><em>Ben Best, Jai Ranganathan</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-16</em></p>
-</div>
-<div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This document is a guide to using the Infographiq method for displaying data in a user-friendly way. The Infographiq method uses a combination of Javascript and R to produce clickable art that acts as an interface for users to access scientific data. An illustration of the Infographiq method can be seen below.</p>
-<p><img src="infographiq-image.png" alt="Image of Infographiq approach" /><br />
-</p>
-<p>This guide details how to prepare:</p>
+<div id="adobe-illustrator-illustrator" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> Adobe Illustrator (#illustrator)</h1>
+<p>This guide assumes you have a basic knowledge of using Illustrator (<a href="https://helpx.adobe.com/illustrator/tutorials.html">here is a great series of tutorials</a>). In particular, you’ll need to understand how layers work in Illustrator (and <a href="https://helpx.adobe.com/illustrator/using/layers.html">here’s a tutorial</a> for that).</p>
+<p>In the Infographiq example folder, you’ll find a file called illustrator_example.ai. Open this file in Illustrator and you’ll see the following:</p>
+<p><img src="illustrator1.png" /></p>
+<p>If you check out the Layers tab for the image, you’ll see that the image is composed of three layers:</p>
+<p><img src="illustrator2.png" /></p>
+<p>This is the required layer order of an Infographiq image.</p>
+<p><strong>Layers</strong></p>
 <ol style="list-style-type: decimal">
-<li>an Infographiq-ready image,</li>
-<li>the “modal windows” in which data is shown,</li>
-<li>the link table that connects the image with the modal windows,</li>
-<li>a web page to embed an Infographiq-enabled image.</li>
+<li>text: This first layer is optional and, if present, must be called lower case “text”. This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the “Text in image” button in the upper right of our <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">Infographiq example</a>.</li>
 </ol>
-<p>You can find a demonstration of Infographiq, showing many of the options available with the associated Javascript library, <a href="https://marinebon.org/infographiqJS/demo.html">here</a>.</p>
-<p>Infographiq can also display data in modal window form via a user-clickable table. In <a href="https://marinebon.org/infographiqJS/table_modalv1.html">this demonstration table</a>, click on any row to see the associated modal window.</p>
-
+<p>In the Layers panel, we can see that the “text” layer contains several elements:</p>
+<p><img src="illustrator3.png" /></p>
+<p>There are two essential things here:</p>
+<p>A. All of the elements are vector-based (nothing pixel-based).</p>
+<p>B. None of the elements within this layer are named “text”. The following (where one of the elements is named text) is not allowed:</p>
+<p><img src="illustrator4.png" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for “text” or the name of any clickable element in the image.</li>
+</ol>
+<p>If you check out the Layers panel for “icons”, you’ll see that it contains five sublayers (chartexample1 through 5):</p>
+<p><img src="illustrator5.png" /></p>
+<p>Each of these sublayers defines a single clickable component of the image.</p>
+<ul>
+<li><p>The names of these sublayers should not contain spaces or be called “text”.</p></li>
+<li><p>All elements within the sublayers should be vector-based and not pixel-based.</p></li>
+<li><p>Nothing should overlap on top of anything you want to be clickable.</p></li>
+<li><p>Each sublayer contains all of the elements for a single clickable icon.</p></li>
+<li><p>The elements in the sublayer, if named, should not have the same name as the sublayer itself. So, for example the following won’t work (where the element within chartexample1 is also called chartexample1):</p></li>
+</ul>
+<p><img src="illustrator6.png" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>background_elements: an optional layer that contains all non-responsive elements of the image. This layer can be called anything (other than “text” or the name of a clickable sublayer). It is ignored by the Infographiq Javascript.</li>
+</ol>
+<p><strong>Saving the image</strong></p>
+<p>To be used by Infographiq, the file must be exported in svg format. To do so:</p>
+<ol style="list-style-type: decimal">
+<li>From the menu, click: File &gt; Export &gt; Export As.</li>
+<li>In the following screen, select svg format. Be sure to click “Use Artboards”.</li>
+<li>In the final screen that pops up, be sure to set Object IDs to "Layer Names, as follows:</li>
+</ol>
+<p><img src="illustrator7.png" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>The default for Illustrator is to add an “01” to your svg file name (so, “example.svg” becomes “example01.svg”. Change the file name back to your desired choice.</li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="getting-started.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="creating-an-infographiq-image-image-creation.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="inkscape-inkscape.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -160,15 +186,15 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/marinebon/infographiq/edit/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/edit/main/02-image.Rmd",
 "text": "Edit"
 },
 "history": {
-"link": "https://github.com/marinebon/infographiq/commits/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/commits/main/02-image.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/marinebon/infographiq/blob/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/blob/main/02-image.Rmd",
 "text": null
 },
 "download": [["infographiq.pdf", "Adobe pdf"], ["infographiq.docx", "Word docx"]],

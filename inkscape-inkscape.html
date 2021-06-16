@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Guide to Infographiq</title>
+  <title>Chapter 5 Inkscape (#inkscape) | Guide to Infographiq</title>
   <meta name="description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Guide to Infographiq" />
+  <meta property="og:title" content="Chapter 5 Inkscape (#inkscape) | Guide to Infographiq" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="marinebon/infographiq" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Guide to Infographiq" />
+  <meta name="twitter:title" content="Chapter 5 Inkscape (#inkscape) | Guide to Infographiq" />
   
   <meta name="twitter:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="adobe-illustrator-illustrator.html"/>
 
-<link rel="next" href="getting-started.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,25 +101,18 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Guide to Infographiq</h1>
-<p class="author"><em>Ben Best, Jai Ranganathan</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-06-16</em></p>
-</div>
-<div id="introduction" class="section level1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This document is a guide to using the Infographiq method for displaying data in a user-friendly way. The Infographiq method uses a combination of Javascript and R to produce clickable art that acts as an interface for users to access scientific data. An illustration of the Infographiq method can be seen below.</p>
-<p><img src="infographiq-image.png" alt="Image of Infographiq approach" /><br />
-</p>
-<p>This guide details how to prepare:</p>
+<div id="inkscape-inkscape" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> Inkscape (#inkscape)</h1>
+<p>This guide assumes you have a basic knowledge of using Inkscape (<a href="https://inkscape.org/learn/tutorials/">here is a great series of tutorials</a>). In particular, you’ll need to understand how layers work in Inkscape (and <a href="https://roy-torley.github.io/Inkscape_Tutorial/Tutorial06/Tutorial06.html">here’s a tutorial</a> for that).</p>
+<p>In the Infographiq example folder, you’ll find a file called inkscape_example.svg. Open this file in Inkscape and you’ll see the following:</p>
+<p><img src="inkscape1.png" /></p>
+<p>If you check out the Layers palette for the image, you’ll see the following:</p>
+<p><img src="inkscape2.png" /></p>
+<p>This is the required layer order of an Inkscape image.</p>
+<p><strong>Layers</strong></p>
 <ol style="list-style-type: decimal">
-<li>an Infographiq-ready image,</li>
-<li>the “modal windows” in which data is shown,</li>
-<li>the link table that connects the image with the modal windows,</li>
-<li>a web page to embed an Infographiq-enabled image.</li>
+<li>text: This first layer is optional and, if present, must be called lower case “text”. This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the “Text in image” button in the upper right of our <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">Infographiq example</a>. The essential thing here is that all of the elements are vector-based (nothing pixel-based).</li>
 </ol>
-<p>You can find a demonstration of Infographiq, showing many of the options available with the associated Javascript library, <a href="https://marinebon.org/infographiqJS/demo.html">here</a>.</p>
-<p>Infographiq can also display data in modal window form via a user-clickable table. In <a href="https://marinebon.org/infographiqJS/table_modalv1.html">this demonstration table</a>, click on any row to see the associated modal window.</p>
 
 </div>
             </section>
@@ -127,8 +120,8 @@
           </div>
         </div>
       </div>
+<a href="adobe-illustrator-illustrator.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="getting-started.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -160,15 +153,15 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/marinebon/infographiq/edit/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/edit/main/02-image.Rmd",
 "text": "Edit"
 },
 "history": {
-"link": "https://github.com/marinebon/infographiq/commits/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/commits/main/02-image.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/marinebon/infographiq/blob/main/index.Rmd",
+"link": "https://github.com/marinebon/infographiq/blob/main/02-image.Rmd",
 "text": null
 },
 "download": [["infographiq.pdf", "Adobe pdf"], ["infographiq.docx", "Word docx"]],
