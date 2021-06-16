@@ -2,6 +2,6 @@ introduction
 getting_started
 javascript_basics
 localhost
-creating-an-infographiq-image-image_creation
-adobe-illustrator-illustrator
-inkscape-inkscape
+image_creation
+illustrator
+inkscape
