@@ -1,8 +1,8 @@
-fig:nice-fig
-tab:nice-tab
-prerequisites
-intro
-literature
+introduction
+getting_started
+javascript_basics
+localhost
+creating-an-infographiq-image
 methods
 applications
 example-one
