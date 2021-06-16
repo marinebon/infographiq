@@ -9,7 +9,7 @@ To use the Infographiq approach, you'll need a couple of things:
 5.  An understanding of how to run Javascript locally from your own computer. Don't fret if you don't know: we get into it on this page.
 6.  The example folder for Infographiq, which provides a full working example that you can fiddle around with. We'll be referring to this folder extensively in this guide and you can [download a compressed version here](https://marinebon.org/infographiqJS/infographiq_example.zip). Just unzip the folder when you get it.
 
-## The basics of Javascript for a newbie {#javascript_basics}
+## The basics of Javascript {#javascript_basics}
 
 We'll be providing a very fast pass through Javascript here, but for a more detailed tutorial, [check this out](https://www.w3schools.com/js/default.asp).
 
@@ -36,7 +36,7 @@ This line loads in a bunch of Javascript code written elsewhere - which is known
 
 Here, within the confines of the `<script>` tags, we're directly writing some Javascript code. In this particular case, we're calling a function called `link_svg` (more on this function later).
 
-2.  **You end a Javascript line with a semicolon.** In the Javascript example for 1B above, this may seem like multiple lines of code. But it isn't! Take a careful look at the end of the second-to-last line (the one starting with `svg_filter`). You'll notice that there is a semicolon there. In fact, it is the only place in this code chunk where there is a semicolon. So, that means this whole chunk is actually just one line of code, so far as the Javascript is concerned. Why does this matter to you? It matters because a classic reason why Javascript code fails is because the programmer forgot to put a semicolons in the right places (don't let that happen to you).
+2.  **You end a Javascript line with a semicolon.** In the Javascript example for 1B above, this may seem like multiple lines of code. But it isn't! Take a careful look at the end of the second-to-last line (the one starting with `svg_filter`). You'll notice that there is a semicolon there. In fact, it is the only place in this code chunk where there is a semicolon. So, that means this whole chunk is actually just one line of code, so far as the Javascript is concerned. Why does this matter to you? It matters because a classic reason why Javascript code fails is because the programmer forgot to put semicolons in the right places (don't let that happen to you).
 
 3.  **Javascript functions.** A function is a simple way of calling upon a chunk of code that has been written elsewhere. In Javascript, the dead giveaway that a function is being called is a set of parentheses after some term (something like this: `some_function()`. So, for example in 1B above, you know `link_svg` is a function because you see `link_svg(` on the third line. You may be a bit confused though, because the closing parentheses only shows up several lines later (on the `svg_filter` line). What's all the stuff in between the parentheses?
 
