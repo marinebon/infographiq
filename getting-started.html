@@ -124,19 +124,19 @@
 <li><strong>Javascript is used in html pages via the <code>&lt;script&gt;</code> tag.</strong> Using your handy-dandy code editor, take a look at the infographic.html file that is contained within the Infographic example folder that you just downloaded. There, you’ll see that a html page can draw upon Javascript in two ways.</li>
 </ol>
 <p>1A. Loading an external Javascript library. Line 12 of the infographic.html file reads as follows:</p>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<pre><code>&lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</code></pre>
 <p>This line loads in a bunch of Javascript code written elsewhere - which is known as a Javascript library. In this case, we’re loading in Bootstrap - a well-known Javascript library</p>
 <p>1B. Writing Javascript code directly within a page. Lines 32-41 of the infographic.html file read as follows:</p>
-  <script>
+<pre><code>&lt;script&gt;
     link_svg({
-      svg: "illustrator_example.svg", 
-      csv: "icon_link.csv", 
-      svg_id: "svg1", 
-      toc_id: "toc1",
-      toc_style: "sectioned_list",
-      text_toggle: "toggle_off",
-      svg_filter: "illustrator_example.svg"});
-  </script>
+        svg: &quot;illustrator_example.svg&quot;, 
+        csv: &quot;icon_link.csv&quot;, 
+        svg_id: &quot;svg1&quot;, 
+        toc_id: &quot;toc1&quot;,
+        toc_style: &quot;sectioned_list&quot;,
+        text_toggle: &quot;toggle_off&quot;,
+        svg_filter: &quot;illustrator_example.svg&quot;});
+&lt;/script&gt;</code></pre>
 <p>Here, within the confines of the <code>&lt;script&gt;</code> tags, we’re directly writing some Javascript code. In this particular case, we’re calling a function called <code>link_svg</code> (more on this function later).</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p><strong>You end a Javascript line with a semicolon.</strong> In the Javascript example for 1B above, this may seem like multiple lines of code. But it isn’t! Take a careful look at the end of the second-to-last line (the one starting with <code>svg_filter</code>). You’ll notice that there is a semicolon there. In fact, it is the only place in this code chunk where there is a semicolon. So, that means this whole chunk is actually just one line of code, so far as the Javascript is concerned. Why does this matter to you? It matters because a classic reason why Javascript code fails is because the programmer forgot to put a semicolons in the right places (don’t let that happen to you).</p></li>
