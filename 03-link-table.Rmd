@@ -8,13 +8,7 @@ In this section of the guide, we get into how to set up this "link table".
 
 To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "icon_link.csv", which is the link table [used by the example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open icon_link.csv in whatever program you use for looking at tables. The first few lines look as follows:
 
-+-------------------------+---------------+--------------------------------------+----------------------------------+------------+-----------+
-| svg                     | icon          | title                                | link                             | section    | not_modal |
-+=========================+===============+======================================+==================================+============+===========+
-| illustrator_example.svg | chartexample1 | Google Charts Example                | modals/modal_google_charts.html  | Category 1 | F         |
-+-------------------------+---------------+--------------------------------------+----------------------------------+------------+-----------+
-| illustrator_example.svg | chartexample2 | Google Charts Example with Trend Bar | modals/modal_google_charts2.html | Category 1 | F         |
-+-------------------------+---------------+--------------------------------------+----------------------------------+------------+-----------+
+![](link_table.png)
 
 ## Table structure {#table_structure}
 
