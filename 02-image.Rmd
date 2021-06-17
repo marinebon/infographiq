@@ -36,7 +36,7 @@ B. None of the elements within this layer are named "text". The following (where
 
 ![](illustrator4.png)
 
-2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#illustrator_raster).
+2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image.
 
 If you check out the Layers panel for "icons", you'll see that it contains five sublayers (chartexample1 through 5):
 
@@ -46,7 +46,7 @@ Each of these sublayers defines a single clickable component of the image.
 
 -   The names of these sublayers should not contain spaces or be called "text".
 
--   All elements within the sublayers should be vector-based and not raster-based.
+-   All elements within the sublayers should be vector-based and not raster-based. If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#illustrator_raster).
 
 -   Nothing should overlap on top of anything you want to be clickable.
 
