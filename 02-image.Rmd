@@ -20,7 +20,7 @@ If you check out the Layers tab for the image, you'll see that the image is comp
 
 This is the required layer order of an Infographiq image.
 
-**Layers**
+### Layer organization {#illustrator_layers}
 
 1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html).
 
@@ -30,13 +30,13 @@ In the Layers panel, we can see that the "text" layer contains several elements:
 
 There are two essential things here:
 
-A. All of the elements are vector-based (nothing pixel-based).
+A. All of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#illustrator_raster).
 
 B. None of the elements within this layer are named "text". The following (where one of the elements is named text) is not allowed:
 
 ![](illustrator4.png)
 
-2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image.
+2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#illustrator_raster).
 
 If you check out the Layers panel for "icons", you'll see that it contains five sublayers (chartexample1 through 5):
 
@@ -46,25 +46,61 @@ Each of these sublayers defines a single clickable component of the image.
 
 -   The names of these sublayers should not contain spaces or be called "text".
 
--   All elements within the sublayers should be vector-based and not pixel-based.
+-   All elements within the sublayers should be vector-based and not raster-based.
 
 -   Nothing should overlap on top of anything you want to be clickable.
 
 -   Each sublayer contains all of the elements for a single clickable icon.
 
--   The elements in the sublayer, if named, should not have the same name as the sublayer itself. So, for example the following won't work (where the element within chartexample1 is also called chartexample1):
+-   The elements in the sublayer, if named, should not have the same name as the sublayer itself. So, for example, the following won't work (the element within chartexample1 is also called chartexample1):
 
 ![](illustrator6.png)
 
 3.  background_elements: an optional layer that contains all non-responsive elements of the image. This layer can be called anything (other than "text" or the name of a clickable sublayer). It is ignored by the Infographiq Javascript.
 
-**Saving the image**
+### Dealing with raster-based elements {#illustrator_raster}
+
+**How do I tell if something is raster or vector-based?**
+
+One dead give-away that an image is raster-based is if the file is saved in a raster-based file format. You can determine the file format of a file by checking out the last few characters of the file name (the file extension). Some common raster-based file formats are (with their extensions):
+
+-   .gif (Graphic Interchange Format)
+
+-   .jpg or .jpeg (Joint Photographic Experts Group)
+
+-   .png (Portable Network Graphics)
+
+-   .psd (Photoshop Document)
+
+-   .tiff (Tag Image File Format)
+
+Checking the file extension isn't a fool-proof system though. Just because an image is saved in some other format than those above doesn't mean that it isn't a raster-based image. So, how can you know for sure? Well, open the image up in Illustrator and take a close look at the Layer panel. If the image is raster-based, it will say `<Image>` under the appropriate layer (be sure to click the arrow just to the left of the layer name to see what it contains). See below for an example:
+
+![](illustrator11.png)
+
+**Converting a raster to a vector**
+
+If you have some raster-based elements that you'd like to include in your Infographiq image, Illustrator has got you covered. You'll just need to convert those elements into vectors and here's how to do that:
+
+1.  Select image (from Layers; or Select All from menu).
+
+![](illustrator8.png)
+
+2.  From the menu, select Object \> Image Trace \> Make and Expand.
+
+![](illustrator9.png)
+
+3.  Delete (trash icon in Layers menu) or Unite/Merge (in Pathfinder menu) the selected layers until you achieve the desired simplified icon result.
+
+![](illustrator10.png)
+
+### Saving the image {#illustrator_saving}
 
 To be used by Infographiq, the file must be exported in svg format. To do so:
 
 1.  From the menu, click: File \> Export \> Export As.
 2.  In the following screen, select svg format. Be sure to click "Use Artboards".
-3.  In the final screen that pops up, be sure to set Object IDs to "Layer Names, as follows:
+3.  In the final screen that pops up, be sure to set Object IDs to "Layer Names", as follows:
 
 ![](illustrator7.png)
 
@@ -78,12 +114,70 @@ In the Infographiq example folder, you'll find a file called inkscape_example.sv
 
 ![](inkscape1.png)
 
-If you check out the Layers palette for the image, you'll see the following:
+If you check out the Layers panel for the image, you'll see the following:
 
 ![](inkscape2.png)
 
 This is the required layer order of an Inkscape image.
 
-**Layers**
+### Layer organization
 
-1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). The essential thing here is that all of the elements are vector-based (nothing pixel-based).
+1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). The essential thing here is that all of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#inkscape_raster).
+
+2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you check out the Layers panel for "icons" (see image just above), you'll see that it contains five sublayers (chartexample1 through 5). Each of these sublayers defines a single clickable component of the image.
+
+    -   The names of these sublayers should not contain spaces or be called "text".
+
+    -   All elements within the sublayers should be vector-based and not raster-based. If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#inkscape_raster).
+
+    -   Nothing should overlap on top of anything you want to be clickable.
+
+    -   Each sublayer contains all of the elements for a single clickable icon.
+
+3.  background_elements: an optional layer that contains all non-responsive elements of the image. This layer can be called anything (other than "text" or the name of a clickable layer). It is ignored by the Infographiq Javascript.
+
+### Editing the layer XML {#inkscape_XML}
+
+In order for the Infographiq image to behave properly, you will need to edit the XML for the image. In order to do so, you'll need to have two panels visible:
+
+1.  Layers (to show from Menu, Layer \> Layers...)
+
+2.  XML Editor (to show from Menu, Edit \> XML Editor...)
+
+Let's zoom in on these panels for the image inkscape_example.svg:
+
+![](inkscape3.png)
+
+For each of your layers:
+
+1.  Click the associated entry in the XML Editor (hint: the "inkscape:label" will match the layer name).
+2.  In the box to the right, change the id to match the layer name.
+3.  Select the "text" layer in the XML Editor. In the box to the right, click the red X by "display: inline" (thereby deleting that row). Note: in the example file inkscape_example.svg, the "display: inline" line has already been deleted.
+
+### Dealing with raster-based elements {#inkscape_raster}
+
+**How do I tell if something is raster or vector-based?**
+
+One dead give-away that an image is raster-based is if the file is saved in a raster-based file format. You can determine the file format of a file by checking out the last few characters of the file name (the file extension). Some common raster-based file formats are (with their extensions):
+
+-   .gif (Graphic Interchange Format)
+
+-   .jpg or .jpeg (Joint Photographic Experts Group)
+
+-   .png (Portable Network Graphics)
+
+-   .psd (Photoshop Document)
+
+-   .tiff (Tag Image File Format)
+
+Checking the file extension isn't a fool-proof system though. Just because an image is saved in some other format than those above doesn't mean that it isn't a raster-based image. So, how can you know for sure? Well, open the image up in Inkscape and right click on it. If in the options you see "Image Properties...", you've got a raster-based image on your hands (see image below).
+
+![](inkscape4.png)
+
+**Converting a raster to a vector**
+
+If you have some raster-based elements that you'd like to include in your Infographiq image, Inkscape has got you covered. You'll just need to convert those elements into vectors and [here's a tutorial](https://inkscape.org/doc/tutorials/tracing/tutorial-tracing.html) on how to do that.
+
+### Saving the image {#inkscape_saving}
+
+To be used by Infographiq, the file must be exported in svg format. Good news! Inkscape's native file format is already svg. When you save the image, just be sure to save it in the format "Inkscape SVG (\*.svg)".
