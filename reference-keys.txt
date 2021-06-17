@@ -12,3 +12,6 @@ layer-organization
 inkscape_XML
 inkscape_raster
 inkscape_saving
+link_table
+table_structure
+table_columns

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 The link table | Guide to Infographiq</title>
+  <meta name="description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 The link table | Guide to Infographiq" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  <meta name="github-repo" content="marinebon/infographiq" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 The link table | Guide to Infographiq" />
+  
+  <meta name="twitter:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  
+
+<meta name="author" content="Ben Best, Jai Ranganathan" />
+
+
+<meta name="date" content="2021-06-17" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="image-creation.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Infographiq</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a><ul>
+<li class="chapter" data-level="2.1" data-path="getting-started.html"><a href="getting-started.html#javascript_basics"><i class="fa fa-check"></i><b>2.1</b> The basics of Javascript</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-started.html"><a href="getting-started.html#localhost"><i class="fa fa-check"></i><b>2.2</b> Running Javascript on your own machine</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="image-creation.html"><a href="image-creation.html"><i class="fa fa-check"></i><b>3</b> Creating an Infographiq image</a><ul>
+<li class="chapter" data-level="3.1" data-path="image-creation.html"><a href="image-creation.html#illustrator"><i class="fa fa-check"></i><b>3.1</b> Adobe Illustrator</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="image-creation.html"><a href="image-creation.html#illustrator_layers"><i class="fa fa-check"></i><b>3.1.1</b> Layer organization</a></li>
+<li class="chapter" data-level="3.1.2" data-path="image-creation.html"><a href="image-creation.html#illustrator_raster"><i class="fa fa-check"></i><b>3.1.2</b> Dealing with raster-based elements</a></li>
+<li class="chapter" data-level="3.1.3" data-path="image-creation.html"><a href="image-creation.html#illustrator_saving"><i class="fa fa-check"></i><b>3.1.3</b> Saving the image</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="image-creation.html"><a href="image-creation.html#inkscape"><i class="fa fa-check"></i><b>3.2</b> Inkscape</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="image-creation.html"><a href="image-creation.html#layer-organization"><i class="fa fa-check"></i><b>3.2.1</b> Layer organization</a></li>
+<li class="chapter" data-level="3.2.2" data-path="image-creation.html"><a href="image-creation.html#inkscape_XML"><i class="fa fa-check"></i><b>3.2.2</b> Editing the layer XML</a></li>
+<li class="chapter" data-level="3.2.3" data-path="image-creation.html"><a href="image-creation.html#inkscape_raster"><i class="fa fa-check"></i><b>3.2.3</b> Dealing with raster-based elements</a></li>
+<li class="chapter" data-level="3.2.4" data-path="image-creation.html"><a href="image-creation.html#inkscape_saving"><i class="fa fa-check"></i><b>3.2.4</b> Saving the image</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="link-table.html"><a href="link-table.html"><i class="fa fa-check"></i><b>4</b> The link table</a><ul>
+<li class="chapter" data-level="4.1" data-path="link-table.html"><a href="link-table.html#table_structure"><i class="fa fa-check"></i><b>4.1</b> Table structure</a></li>
+<li class="chapter" data-level="4.2" data-path="link-table.html"><a href="link-table.html#table_columns"><i class="fa fa-check"></i><b>4.2</b> Table columns</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Infographiq</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="link_table" class="section level1">
+<h1><span class="header-section-number">Chapter 4</span> The link table</h1>
+<p>The Infographiq method connects a clickable image with scientific data. Infographiq uses a table to know what data is to be associated with what parts of the image, as shown below:</p>
+<p><img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/></p>
+<p>In this section of the guide, we get into how to set up this “link table”.</p>
+<p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “icon_link.csv”, which is the link table <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">used by the example</a>. Open icon_link.csv in whatever program you use for looking at tables. The first few lines look as follows:</p>
+<table>
+<colgroup>
+<col width="18%" />
+<col width="11%" />
+<col width="27%" />
+<col width="24%" />
+<col width="9%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>svg</th>
+<th>icon</th>
+<th>title</th>
+<th>link</th>
+<th>section</th>
+<th>not_modal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>illustrator_example.svg</td>
+<td>chartexample1</td>
+<td>Google Charts Example</td>
+<td>modals/modal_google_charts.html</td>
+<td>Category 1</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>illustrator_example.svg</td>
+<td>chartexample2</td>
+<td>Google Charts Example with Trend Bar</td>
+<td>modals/modal_google_charts2.html</td>
+<td>Category 1</td>
+<td>F</td>
+</tr>
+</tbody>
+</table>
+<div id="table_structure" class="section level2">
+<h2><span class="header-section-number">4.1</span> Table structure</h2>
+<ol style="list-style-type: decimal">
+<li><p>The first line of the table must be the column header.</p></li>
+<li><p>The table must be saved in .csv (comma-separated values) format.</p></li>
+<li><p>The column order doesn’t matter.</p></li>
+<li><p>Each row refers to a single clickable icon in the image.</p></li>
+<li><p>The only required column is “icon”. All others are optional.</p></li>
+</ol>
+</div>
+<div id="table_columns" class="section level2">
+<h2><span class="header-section-number">4.2</span> Table columns</h2>
+<ul>
+<li><p><strong>icon (required):</strong> the name of the layer in the image to be made clickable (the name must exactly match). So, <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">in the case of the Infographiq example</a>, the possibilities would be:</p>
+<ul>
+<li><p>chartexample1</p></li>
+<li><p>chartexample2</p></li>
+<li><p>chartexample3</p></li>
+<li><p>chartexample4</p></li>
+<li><p>chartexample5</p></li>
+</ul>
+<p>These are the layer names of the clickable components of the image, as seen in this Layer panel from Adobe Illustrator.</p>
+<p><img src="illustrator5.png" /></p></li>
+<li><p><strong>svg (optional):</strong> a single link table can be used for multiple Infographiq images. However, if doing so, we need a way to separate out the information for each image, which is what the svg column allows for. All rows to be grouped together as part of the same image should have the same value for svg (the value doesn’t have to be the image name).</p>
+<p>If the svg column is absent, then Infographiq will attempt to match all rows in the link table with a given Infographiq image (which is what you would want, if the table only refers to a single image). In the example table icon_link.csv, the only value for this column is “illustrator_example.svg”, which is functionally the same as not having the column at all (since all rows will be taken in).</p></li>
+<li><p><strong>title (optional):</strong> the text that should appear on the image when the mouse is over the clickable element (move the mouse over <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">the example image</a> to see what this means). If there is no title column, then the name given in the “icon” column will show up on the image instead.</p></li>
+<li><p><strong>link (optional):</strong> when a clickable element of an image is clicked, Infographiq loads an external HTML file above the image as an <code>&lt;iframe&gt;</code> (<a href="https://www.w3schools.com/html/html_iframe.asp">more here</a> on what an <code>&lt;iframe&gt;</code> is). This external HTML file contains the data for the modal window. Other sections of this guide go into detail about the construction of these external HTML files, so we will skip that conversation here.</p>
+<p>For the purposes of this column, all that is needed is the link to the external HTML file, with both relative and absolute links allowed. In the case of the Infographiq example, all of the external HTML files are contained within the example folder, within a subfolder called “modals”. It is isn’t necessary for a modals subfolder to exist, but we recommend it for ease of organization.</p>
+<p>If the link column is absent, the Infographiq code will assume that the external HTML file is contained in the directory where the Infographiq-containing HTML file is located (so in the Infographiq example, if the link column was missing, the target directory would be “infographiq_example”, as that is where “infographic.html” is located). It will further assume that the external HTML file name is the icon name plus “.html” (so, for the first row of icon_link.csv, the assumed HTML file name would be “chartexample1.html”).</p></li>
+<li><p><strong>section (optional):</strong> a method of separating the clickable elements by category. In the demonstration <a href="https://marinebon.org/infographiqJS/demo.html">Example of Infographiq Functionality</a>, if you select either Accordion or Sectioned List under “Text list type”, you’ll see that the clickable elements are separated by category in the list to the right. The “section” column is what allows this separation to occur, with all icons to be grouped being given the same value for “section”. In the <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">main Infographiq example</a> used in this guide, there are two categories for “section” in the icon_link.csv table: “Category 1” and “Category 2”. If the section column is missing from the table, then the Accordion and Sectioned List options are not allowed for “Text list type”.</p></li>
+<li><p><strong>not_modal (optional):</strong> a method for directly linking to an external HTML resource, as opposed to loading it above the image as a modal window. Two values are allowed in this column:</p>
+<ul>
+<li><p>T: link directly to an external HTML resource, based upon the value in the “link” column (not a modal window).</p></li>
+<li><p>F: external HTML file opens above Infographiq image, based upon the value in the “link” column (modal window).</p></li>
+</ul>
+<p>For an illustration on how this works, in the <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">main Infographiq example</a>, if you click on the yellow circle, it will take you directly to the main site for the National Oceanic and Atmospheric Administration. The reason that it does so is that, in the relevant row of icon_link.csv (the last row), the value for not_modal is T.</p>
+<p>If the not_modal column is absent, then all external HTML files listed in the link column will open as modal windows above the Infographiq image.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="image-creation.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/marinebon/infographiq/edit/main/03-link-table.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": "https://github.com/marinebon/infographiq/commits/main/03-link-table.Rmd",
+"text": null
+},
+"view": {
+"link": "https://github.com/marinebon/infographiq/blob/main/03-link-table.Rmd",
+"text": null
+},
+"download": [["infographiq.pdf", "Adobe pdf"], ["infographiq.docx", "Word docx"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
