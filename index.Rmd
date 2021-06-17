@@ -16,8 +16,14 @@ description: "This is a guide to the Infographiq software library for displaying
 
 This document is a guide to using the Infographiq method for displaying data in a user-friendly way. The Infographiq method uses a combination of Javascript and R to produce clickable art that acts as an interface for users to access scientific data. An illustration of the Infographiq method can be seen below.
 
-![Image of Infographiq approach](infographiq-image.png)\
+<img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/>
 
+```{=html}
+<!--
+infographiq-elements - Google Drawing
+- Edit: https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/edit
+-->
+```
 This guide details how to prepare:
 
 1.  an Infographiq-ready image,
