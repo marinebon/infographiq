@@ -4,4 +4,11 @@ javascript_basics
 localhost
 image_creation
 illustrator
+illustrator_layers
+illustrator_raster
+illustrator_saving
 inkscape
+layer-organization
+inkscape_XML
+inkscape_raster
+inkscape_saving
