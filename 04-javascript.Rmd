@@ -22,7 +22,7 @@ In order for `link_svg()` to work, it relies upon other Javascript and CSS libra
 
 ## Example {#example}
 
-To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "infographic.html", which you can also see [here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open infographic.html in your handy-dandy code editor. Lines 9-15 in the `<head` section of the HTML, which read in as follows, load in the dependencies for InfographiqJS. The InfographiqJS-specific CSS is also loaded:
+To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "infographic.html", which you can also see [here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open infographic.html in your handy-dandy code editor. Lines 9-15 in the `<head>` section of the HTML, which read in as follows, load in the dependencies for InfographiqJS. The InfographiqJS-specific CSS is also loaded:
 
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"
         integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ="
