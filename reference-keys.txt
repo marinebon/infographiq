@@ -15,3 +15,8 @@ inkscape_saving
 link_table
 table_structure
 table_columns
+the-infographiqjs-javascript
+dependencies
+example
+parameters
+html-layout-with-bootstrap

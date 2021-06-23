@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 The InfographiqJS Javascript | Guide to Infographiq</title>
+  <meta name="description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 The InfographiqJS Javascript | Guide to Infographiq" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  <meta name="github-repo" content="marinebon/infographiq" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 The InfographiqJS Javascript | Guide to Infographiq" />
+  
+  <meta name="twitter:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
+  
+
+<meta name="author" content="Ben Best, Jai Ranganathan" />
+
+
+<meta name="date" content="2021-06-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="link-table.html"/>
+<link rel="next" href="html-layout-with-bootstrap.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Infographiq</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a><ul>
+<li class="chapter" data-level="2.1" data-path="getting-started.html"><a href="getting-started.html#javascript_basics"><i class="fa fa-check"></i><b>2.1</b> The basics of Javascript</a></li>
+<li class="chapter" data-level="2.2" data-path="getting-started.html"><a href="getting-started.html#localhost"><i class="fa fa-check"></i><b>2.2</b> Running Javascript on your own machine</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="image-creation.html"><a href="image-creation.html"><i class="fa fa-check"></i><b>3</b> Creating an Infographiq image</a><ul>
+<li class="chapter" data-level="3.1" data-path="image-creation.html"><a href="image-creation.html#illustrator"><i class="fa fa-check"></i><b>3.1</b> Adobe Illustrator</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="image-creation.html"><a href="image-creation.html#illustrator_layers"><i class="fa fa-check"></i><b>3.1.1</b> Layer organization</a></li>
+<li class="chapter" data-level="3.1.2" data-path="image-creation.html"><a href="image-creation.html#illustrator_raster"><i class="fa fa-check"></i><b>3.1.2</b> Dealing with raster-based elements</a></li>
+<li class="chapter" data-level="3.1.3" data-path="image-creation.html"><a href="image-creation.html#illustrator_saving"><i class="fa fa-check"></i><b>3.1.3</b> Saving the image</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="image-creation.html"><a href="image-creation.html#inkscape"><i class="fa fa-check"></i><b>3.2</b> Inkscape</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="image-creation.html"><a href="image-creation.html#layer-organization"><i class="fa fa-check"></i><b>3.2.1</b> Layer organization</a></li>
+<li class="chapter" data-level="3.2.2" data-path="image-creation.html"><a href="image-creation.html#inkscape_XML"><i class="fa fa-check"></i><b>3.2.2</b> Editing the layer XML</a></li>
+<li class="chapter" data-level="3.2.3" data-path="image-creation.html"><a href="image-creation.html#inkscape_raster"><i class="fa fa-check"></i><b>3.2.3</b> Dealing with raster-based elements</a></li>
+<li class="chapter" data-level="3.2.4" data-path="image-creation.html"><a href="image-creation.html#inkscape_saving"><i class="fa fa-check"></i><b>3.2.4</b> Saving the image</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="link-table.html"><a href="link-table.html"><i class="fa fa-check"></i><b>4</b> The link table</a><ul>
+<li class="chapter" data-level="4.1" data-path="link-table.html"><a href="link-table.html#table_structure"><i class="fa fa-check"></i><b>4.1</b> Table structure</a></li>
+<li class="chapter" data-level="4.2" data-path="link-table.html"><a href="link-table.html#table_columns"><i class="fa fa-check"></i><b>4.2</b> Table columns</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html"><i class="fa fa-check"></i><b>5</b> The InfographiqJS Javascript</a><ul>
+<li class="chapter" data-level="5.1" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#dependencies"><i class="fa fa-check"></i><b>5.1</b> Dependencies</a></li>
+<li class="chapter" data-level="5.2" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#example"><i class="fa fa-check"></i><b>5.2</b> Example</a></li>
+<li class="chapter" data-level="5.3" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#parameters"><i class="fa fa-check"></i><b>5.3</b> Function parameters</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="html-layout-with-bootstrap.html"><a href="html-layout-with-bootstrap.html"><i class="fa fa-check"></i><b>6</b> HTML Layout with Bootstrap</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Guide to Infographiq</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-infographiqjs-javascript" class="section level1">
+<h1><span class="header-section-number">Chapter 5</span> The InfographiqJS Javascript</h1>
+<p>The Infographiq method connects a clickable image with scientific data, using a Javascript library called InfographiqJS (<a href="https://marinebon.org/infographiqJS/">located here</a>) as shown in the image below:</p>
+<p><img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/></p>
+<p>In this section of the guide, we get into how InfographiqJS works to create the clickable image.</p>
+<p>Within the InfographiqJS library, there is a function called <code>link_svg()</code>: this is the function used to generate the interactive image. You can see many of the options available via <code>link_svg()</code> at this <a href="https://marinebon.org/infographiqJS/demo.html">demonstration page</a>.</p>
+<div id="dependencies" class="section level2">
+<h2><span class="header-section-number">5.1</span> Dependencies</h2>
+<p>In order for <code>link_svg()</code> to work, it relies upon other Javascript and CSS libraries that must be loaded prior to the InfographiqJS Javascript being loaded. These other libraries are known as the <strong>dependencies</strong> for InfographiqJS.</p>
+<p><code>link_svg</code> Dependencies:</p>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://jquery.com/">jQuery (version 1.9.1)</a>.</p></li>
+<li><p><a href="https://d3js.org/">D3 (version 5)</a>.</p></li>
+<li><p><a href="https://getbootstrap.com/docs/3.3/">Bootstrap (version 3.3.5)</a>. Note that Bootstrap, which is a framework used for layout, is more of a pseudo-dependency for InfographiqJS. InfographiqJS does not strictly require Bootstrap to run, but we highly recommend its use for layout and our examples have Bootstrap embedded.</p></li>
+</ol>
+</div>
+<div id="example" class="section level2">
+<h2><span class="header-section-number">5.2</span> Example</h2>
+<p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 9-15 in the <code>&lt;head</code> section of the HTML, which read in as follows, load in the dependencies for InfographiqJS. The InfographiqJS-specific CSS is also loaded:</p>
+<pre><code>&lt;script src=&quot;[https://code.jquery.com/jquery-1.9.1.min.js&quot;](https://code.jquery.com/jquery-1.9.1.min.js&quot;)
+    integrity=&quot;sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=&quot;
+    crossorigin=&quot;anonymous&quot;\&gt;\&lt;/script\&gt;
+&lt;script src=&quot;[https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;](https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;)\&lt;/script\&gt;
+&lt;script src=&quot;[https://d3js.org/d3.v5.min.js&quot;](https://d3js.org/d3.v5.min.js&quot;)\&lt;/script\&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;[https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;](https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;)
+&lt;link rel=&quot;stylesheet&quot; href=&quot;[https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css&quot;](https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css&quot;)</code></pre>
+<p>Lines 31-41 of the HTML are where we load in the InfographiqJS Javascript as well as where we call the function <code>link_svg()</code>. This placement is very important: the InfographiqJS Javascript and <code>link_svg()</code> must show up at the bottom of the <code>&lt;body&gt;</code> of the HTML.</p>
+<pre><code>&lt;script src=&#39;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js&#39;&gt;&lt;/script&gt;
+&lt;script&gt;
+    link_svg({
+      svg: &quot;illustrator_example.svg&quot;, 
+      csv: &quot;icon_link.csv&quot;, 
+      svg_id: &quot;svg1&quot;, 
+      toc_id: &quot;toc1&quot;,
+      toc_style: &quot;sectioned_list&quot;,
+      text_toggle: &quot;toggle_off&quot;,
+      svg_filter: &quot;illustrator_example.svg&quot;});
+&lt;/script&gt;</code></pre>
+</div>
+<div id="parameters" class="section level2">
+<h2><span class="header-section-number">5.3</span> Function parameters</h2>
+<p>There are multiple parameters for the function <code>link_svg()</code>, which are detailed here:</p>
+<ul>
+<li><p><strong>svg (required)</strong>: the file path of the infographic image, with both relative and absolute links allowed. The details of how to create the infographic image in a Infographiq-compliant way can be found <a href="https://marinebon.org/infographiq/image-creation.html">elsewhere in this guide</a>. In the example infographic.html, the svg parameter equals “illustrator_example.svg”.</p></li>
+<li><p><strong>csv (required)</strong>: the file path of the link table, with both relative and absolute links allowed. The details of how to create the link table in a Infographiq-compliant way can be found <a href="https://marinebon.org/infographiq/link-table.html">elsewhere in this guide</a>. In the example infographic.html, the csv parameter equals “illustrator_example.svg”.</p></li>
+<li><p><strong>svg_id (optional)</strong>: the id of the <code>&lt;div&gt;</code> tag in the HTML file where the infographic image should be placed. This parameter defaults to the value ‘svg’. In the example infographic.html, the svg_id parameter is set to “svg1”, which can be found in the HTML file on line 22.</p></li>
+<li><p><strong>toc_id (optional)</strong>: the id of the <code>&lt;div&gt;</code> tag in the HTML file where the table of contents should be placed. In the <a href="https://marinebon.org/infographiqJS/demo.html">demo page</a>, the table of contents can be seen to the right of the infographic (the red box in the image below). This image defaults to the value ‘toc’. In the example infographic.html, the toc_id parameter is set to “toc1”, which can be found in the HTML file on line 25.</p>
+<p><img src="toc.png" /></p></li>
+<li><p><strong>hover_color (optional)</strong>: the color of the clickable elements in the image when they are selected. Any CSS-compliant color is allowed (<a href="https://www.w3schools.com/colors/default.asp">see here for all of the possibilities</a>). The default value for hover_color is ‘yellow’. To see the effect of changing hover_color, change the value for “Outline color on infographic” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
+<li><p><strong>width (optional)</strong>: the width of the infographic image, with a percentage being required. The default value for width is ‘100%’.</p></li>
+<li><p><strong>height (optional)</strong>: the height of the infographic image, with a percentage being required. The default value for height is ‘100%’.</p></li>
+<li><p><strong>modal_url_pfx (optional)</strong>: a URL prefix to add to the modal window links provided in the link table.</p></li>
+<li><p><strong>toc_style (optional)</strong>: the style of the table of contents. Allowable values are: ‘accordion’, ‘list’, ‘none’, and ‘sectioned_list’. The default value is ‘list’. To see the effect of changing toc_style, change the value for “Text list type” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
+<li><p><strong>colored_sections (optional)</strong>: whether different categories of clickable elements in the infographic should have different hover colors. Allowable values are true and false. The default value is false. If colored_sections is set to true, the hover_color parameter is superseded by the parameter section_colors. This parameter should only be set to true if the “section”column exists in the link table. To see the effect of changing colored_sections, change the value for “Colored section headers” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
+<li><p><strong>section_colors (optional)</strong>: the list of colors to be used for different categories of clickable elements. The value expected is an array of <a href="https://www.w3schools.com/colors/default.asp">CSS-compliant colors</a>. The default value for section_colors is [‘LightGreen’, ‘MediumOrchid’, ‘Orange’]. section_colors is only used if colored_sections is set to true. The number of array elements in section_colors does not have to match the number of sections. If there are fewer array elements than sections, then the array elements are repeated over sections. If there are more array elements than sections, the extra array elements are ignored. To see the effect of changing colored_sections, change the value for “Colored section headers” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
+<li><p><strong>text_toggle (optional)</strong>: the type of text toggle to be displayed above the table of contents. Allowable values are: ‘none’, ‘toggle_off’, and ‘toggle_on’. The default value is ‘none’. To see the effect of changing text_toggle, change the value for “Explanatory text toggle” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
+<li><p><strong>svg_filter (optional)</strong>: if the link table contains the data for multiple infographic images, which rows of the link table should be included. This parameter should only be set if the “svg” column exists in the link table. Only rows in the link table where the “svg” column value matches svg_filter will be included.</p></li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="link-table.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="html-layout-with-bootstrap.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/marinebon/infographiq/edit/main/04-javascript.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": "https://github.com/marinebon/infographiq/commits/main/04-javascript.Rmd",
+"text": null
+},
+"view": {
+"link": "https://github.com/marinebon/infographiq/blob/main/04-javascript.Rmd",
+"text": null
+},
+"download": [["infographiq.pdf", "Adobe pdf"], ["infographiq.docx", "Word docx"]],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
