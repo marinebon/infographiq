@@ -1,1 +1,55 @@
 # HTML Layout with Bootstrap
+
+The Infographiq approach uses Bootstrap for HTML page layout. [Bootstrap](https://getbootstrap.com/docs/3.4/javascript/) is a widely-used Javascript library for controlling layout. In this section of the guide, we give a brief overview to how Bootstrap works, within the Infographiq context. For a much more extensive Bootstrap tutorial, click [here](https://www.w3schools.com/bootstrap/bootstrap_ver.asp).
+
+To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "infographic.html", which you can also see [here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open infographic.html in your handy-dandy code editor. Lines 18-28 in the `<body>` section of the HTML read as follows:
+
+    <!-- define bootstrap layout that will contain the infographic -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-9">
+          <div id = "svg1"></div>
+        </div>
+        <div class="col-md-3">
+          <ul class="panel-group" id="toc1" role="tablist" aria-multiselectable="true"></ul>
+        </div>
+      </div>
+    </div>
+
+This section of the HTML uses Bootstrap to define the layout within which the Infographiq infographic will be placed. Let's go through it line by line.
+
+    <div class="container-fluid">
+
+First, let's define the container that will hold the Infographiq content. For this, we use the Bootstrap class "container-fluid", which indicates that the container should take up the full width of the viewport (which is usually just the width of the browser window).
+
+    <div class="row">
+
+Second, we'll use the Bootstrap class "row" to define the container that will hold the Infographiq content. Bootstrap uses [a grid system](https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp) of columns and rows to control layout. Here, we are indicating that the Infographiq content will all be in a single row.
+
+    <div class="col-md-9">
+
+Third, let's define the container that will hold the Infographiq image with the Bootstrap class "col-md-9". There are three components to this class.
+
+-   The "col" component at the beginning indicates that this class has something to do with Bootstrap columns.
+
+-   The "9" component specifies that this container is to be 9 columns wide. Bootstrap allows a maximum width of 12 columns, so therefore 9/12 of the width of the row (or 75%) is allocated for the Infographiq image.
+
+-   The "md" component stands for "medium". It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.
+
+<!-- -->
+
+    <div id = "svg1"></div>
+
+Fourth, let's create the container where the InfographiqJS Javascript will position the image. In the InfographiqJS function `link_svg()` further down on the HTML page 'infographic.html', we'll provide 'svg1' as the value for the parameter **svg_id**. In [another section of this guide](https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters), we go into much more detail into `link_svg()`.
+
+    <div class="col-md-3">
+
+Fifth, we define the container that will hold the Infographiq table of contents with the Bootstrap class "col-md-3". This class works very similarly to "col-md-9" defined earlier, except that this container will be three columns wide. As there are a total of 12 columns to work with, this container will take up 25% of the width of the row.
+
+    <ul class="panel-group" id="toc1" role="tablist" aria-multiselectable="true"></ul>
+
+Sixth, we create an unordered list where the InfographiqJS Javascript will position the table of contents. In the InfographiqJS function `link_svg()` further down on the HTML page 'infographic.html', we'll provide 'toc1' as the value for the parameter **toc_id**. In [another section of this guide](https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters), we go into much more detail into `link_svg()`.
+
+This unordered list is also given the Bootstrap class "panel-group". This comes into play if "accordion" is selected as the **toc_style** in `link_svg()`, as the accordion is a collection of Bootstrap panels. For more information on the accordion structure in Bootstrap, [click here](https://getbootstrap.com/docs/3.4/javascript/#collapse).
+
+The remaining tags in the unordered list, `role` and `aria-multiselectable`, are used to make the table of contents accessible to those with disabilities.
