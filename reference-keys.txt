@@ -20,3 +20,4 @@ dependencies
 example
 parameters
 html-layout-with-bootstrap
+modal-windows

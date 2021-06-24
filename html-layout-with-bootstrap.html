@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="the-infographiqjs-javascript.html"/>
-
+<link rel="next" href="modal-windows.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,6 +101,7 @@
 <li class="chapter" data-level="5.3" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#parameters"><i class="fa fa-check"></i><b>5.3</b> Function parameters</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="html-layout-with-bootstrap.html"><a href="html-layout-with-bootstrap.html"><i class="fa fa-check"></i><b>6</b> HTML Layout with Bootstrap</a></li>
+<li class="chapter" data-level="7" data-path="modal-windows.html"><a href="modal-windows.html"><i class="fa fa-check"></i><b>7</b> Modal windows</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -123,6 +124,40 @@
             <section class="normal" id="section-">
 <div id="html-layout-with-bootstrap" class="section level1">
 <h1><span class="header-section-number">Chapter 6</span> HTML Layout with Bootstrap</h1>
+<p>The Infographiq approach uses Bootstrap for HTML page layout. <a href="https://getbootstrap.com/docs/3.4/javascript/">Bootstrap</a> is a widely-used Javascript library for controlling layout. In this section of the guide, we give a brief overview to how Bootstrap works, within the Infographiq context. For a much more extensive Bootstrap tutorial, click <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">here</a>.</p>
+<p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 18-28 in the <code>&lt;body&gt;</code> section of the HTML read as follows:</p>
+<pre><code>&lt;!-- define bootstrap layout that will contain the infographic --&gt;
+&lt;div class=&quot;container-fluid&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-9&quot;&gt;
+      &lt;div id = &quot;svg1&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3&quot;&gt;
+      &lt;ul class=&quot;panel-group&quot; id=&quot;toc1&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;&lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>This section of the HTML uses Bootstrap to define the layout within which the Infographiq infographic will be placed. Let’s go through it line by line.</p>
+<pre><code>&lt;div class=&quot;container-fluid&quot;&gt;</code></pre>
+<p>First, let’s define the container that will hold the Infographiq content. For this, we use the Bootstrap class “container-fluid”, which indicates that the container should take up the full width of the viewport (which is usually just the width of the browser window).</p>
+<pre><code>&lt;div class=&quot;row&quot;&gt;</code></pre>
+<p>Second, we’ll use the Bootstrap class “row” to define the container that will hold the Infographiq content. Bootstrap uses <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">a grid system</a> of columns and rows to control layout. Here, we are indicating that the Infographiq content will all be in a single row.</p>
+<pre><code>&lt;div class=&quot;col-md-9&quot;&gt;</code></pre>
+<p>Third, let’s define the container that will hold the Infographiq image with the Bootstrap class “col-md-9”. There are three components to this class.</p>
+<ul>
+<li><p>The “col” component at the beginning indicates that this class has something to do with Bootstrap columns.</p></li>
+<li><p>The “9” component specifies that this container is to be 9 columns wide. Bootstrap allows a maximum width of 12 columns, so therefore 9/12 of the width of the row (or 75%) is allocated for the Infographiq image.</p></li>
+<li><p>The “md” component stands for “medium”. It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.</p></li>
+</ul>
+<!-- -->
+<pre><code>&lt;div id = &quot;svg1&quot;&gt;&lt;/div&gt;</code></pre>
+<p>Fourth, let’s create the container where the InfographiqJS Javascript will position the image. In the InfographiqJS function <code>link_svg()</code> further down on the HTML page ‘infographic.html’, we’ll provide ‘svg1’ as the value for the parameter <strong>svg_id</strong>. In <a href="https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters">another section of this guide</a>, we go into much more detail into <code>link_svg()</code>.</p>
+<pre><code>&lt;div class=&quot;col-md-3&quot;&gt;</code></pre>
+<p>Fifth, we define the container that will hold the Infographiq table of contents with the Bootstrap class “col-md-3”. This class works very similarly to “col-md-9” defined earlier, except that this container will be three columns wide. As there are a total of 12 columns to work with, this container will take up 25% of the width of the row.</p>
+<pre><code>&lt;ul class=&quot;panel-group&quot; id=&quot;toc1&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;&lt;/ul&gt;</code></pre>
+<p>Sixth, we create an unordered list where the InfographiqJS Javascript will position the table of contents. In the InfographiqJS function <code>link_svg()</code> further down on the HTML page ‘infographic.html’, we’ll provide ‘toc1’ as the value for the parameter <strong>toc_id</strong>. In <a href="https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters">another section of this guide</a>, we go into much more detail into <code>link_svg()</code>.</p>
+<p>This unordered list is also given the Bootstrap class “panel-group”. This comes into play if “accordion” is selected as the <strong>toc_style</strong> in <code>link_svg()</code>, as the accordion is a collection of Bootstrap panels. For more information on the accordion structure in Bootstrap, <a href="https://getbootstrap.com/docs/3.4/javascript/#collapse">click here</a>.</p>
+<p>The remaining tags in the unordered list, <code>role</code> and <code>aria-multiselectable</code>, are used to make the table of contents accessible to those with disabilities.</p>
 
 </div>
             </section>
@@ -130,8 +165,8 @@
           </div>
         </div>
       </div>
-<a href="the-infographiqjs-javascript.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="the-infographiqjs-javascript.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modal-windows.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
