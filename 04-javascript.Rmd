@@ -52,7 +52,7 @@ There are multiple parameters for the function `link_svg()`, which are detailed 
 
 -   **svg (required)**: the file path of the infographic image, with both relative and absolute links allowed. The details of how to create the infographic image in a Infographiq-compliant way can be found [elsewhere in this guide](https://marinebon.org/infographiq/image-creation.html). In the example infographic.html, the svg parameter equals "illustrator_example.svg".
 
--   **csv (required)**: the file path of the link table, with both relative and absolute links allowed. The details of how to create the link table in a Infographiq-compliant way can be found [elsewhere in this guide](https://marinebon.org/infographiq/link-table.html). In the example infographic.html, the csv parameter equals "illustrator_example.svg".
+-   **csv (required)**: the file path of the link table, with both relative and absolute links allowed. The details of how to create the link table in a Infographiq-compliant way can be found [elsewhere in this guide](https://marinebon.org/infographiq/link-table.html). In the example infographic.html, the csv parameter equals "icon_link.csv".
 
 -   **svg_id (optional)**: the id of the `<div>` tag in the HTML file where the infographic image should be placed. This parameter defaults to the value 'svg'. In the example infographic.html, the svg_id parameter is set to "svg1", which can be found in the HTML file on line 22.
 
@@ -66,11 +66,11 @@ There are multiple parameters for the function `link_svg()`, which are detailed 
 
 -   **height (optional)**: the height of the infographic image, with a percentage being required. The default value for height is '100%'.
 
--   **modal_url_pfx (optional)**: a URL prefix to add to the modal window links provided in the link table.
+-   **modal_url_pfx (optional)**: a URL prefix to add to the modal window links provided in the [link table](https://marinebon.org/infographiq/link-table.html). An example value for modal_url_pfx would be '<https://www.noaa.gov/fisheries/>'.
 
 -   **toc_style (optional)**: the style of the table of contents. Allowable values are: 'accordion', 'list', 'none', and 'sectioned_list'. The default value is 'list'. To see the effect of changing toc_style, change the value for "Text list type" in the [demo](https://marinebon.org/infographiqJS/demo.html).
 
--   **colored_sections (optional)**: whether different categories of clickable elements in the infographic should have different hover colors. Allowable values are true and false. The default value is false. If colored_sections is set to true, the hover_color parameter is superseded by the parameter section_colors. This parameter should only be set to true if the "section"column exists in the link table. To see the effect of changing colored_sections, change the value for "Colored section headers" in the [demo](https://marinebon.org/infographiqJS/demo.html).
+-   **colored_sections (optional)**: whether different categories of clickable elements in the infographic should have different hover colors. Allowable values are true and false (note: no quotation marks). The default value is false. If colored_sections is set to true, the hover_color parameter is superseded by the parameter section_colors. This parameter should only be set to true if the "section"column exists in the link table. To see the effect of changing colored_sections, change the value for "Colored section headers" in the [demo](https://marinebon.org/infographiqJS/demo.html).
 
 -   **section_colors (optional)**: the list of colors to be used for different categories of clickable elements. The value expected is an array of [CSS-compliant colors](https://www.w3schools.com/colors/default.asp). The default value for section_colors is ['LightGreen', 'MediumOrchid', 'Orange']. section_colors is only used if colored_sections is set to true. The number of array elements in section_colors does not have to match the number of sections. If there are fewer array elements than sections, then the array elements are repeated over sections. If there are more array elements than sections, the extra array elements are ignored. To see the effect of changing section_colors, change the value for "Colored section headers" in the [demo](https://marinebon.org/infographiqJS/demo.html).
 
