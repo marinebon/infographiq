@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Modal windows | Guide to Infographiq</title>
+  <title>Chapter 8 Responsive data tables | Guide to Infographiq</title>
   <meta name="description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22.2 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Modal windows | Guide to Infographiq" />
+  <meta property="og:title" content="Chapter 8 Responsive data tables | Guide to Infographiq" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="marinebon/infographiq" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Modal windows | Guide to Infographiq" />
+  <meta name="twitter:title" content="Chapter 8 Responsive data tables | Guide to Infographiq" />
   
   <meta name="twitter:description" content="This is a guide to the Infographiq software library for displaying data. The output format for this guide is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="html-layout-with-bootstrap.html"/>
-<link rel="next" href="responsive-data-tables.html"/>
+<link rel="prev" href="modal-windows.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -129,61 +129,18 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="modal-windows" class="section level1">
-<h1><span class="header-section-number">Chapter 7</span> Modal windows</h1>
-<p>With the Infographiq method, when a clickable element of an image is clicked, a “modal window” containing data appears on the screen (see image below). To see examples of modal windows in action, check out the <a href="https://marinebon.org/infographiqJS/demo.html">Infographiq demonstration page</a> and click on any element of the image that highlights.</p>
-<p><img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/></p>
-<p>In this section of the guide, we discuss how to create these modal windows. To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a subfolder called “modals” that contains several HTML files (see image below).</p>
-<p><img src="modal_folder.png" /></p>
-<p>These HTML files provide a range of examples for modal windows.</p>
-<div id="what_is" class="section level2">
-<h2><span class="header-section-number">7.1</span> What is a modal window?</h2>
-<p>A modal window is composed of any HTML file. When a clickable element in the image is clicked, the InfographiqJS function <code>link_svg()</code> overlays the associated HTML file over the image as an <code>&lt;iframe&gt;</code>. The association between clickable elements and HTML files is made in the Infographiq link table (see <a href="https://marinebon.org/infographiq/link-table.html">the link table section</a> of the guide for more details on table construction).</p>
-<p>There are no restrictions on the HTML files that become the modal windows: they can be whatever you want. However, we provide several modal window examples to guide your thinking.</p>
-</div>
-<div id="modal1" class="section level2">
-<h2><span class="header-section-number">7.2</span> Example 1: static image</h2>
-<p>The simplest way to display scientific data is as an image. To demonstrate, in the Infographiq example folder, you’ll find a HTML file called “infographic.html” (also <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">visible here</a>). If you open up infographic.html - and click on the red circle in the picture - a modal window will pop up in which you’ll see an image of a line graph.</p>
-<p>This modal window exists in the modal subfolder as a HTML file named “modal_image.html”. If you open that file in your code editor, here’s what the <code>&lt;body&gt;</code> looks like:</p>
-<pre><code>&lt;div&gt;
-    &lt;h3 style=&quot;text-align:center;&quot;&gt;A Basic Line Chart Using an Image&lt;/h3&gt;
-    &lt;img src=&quot;sample_chart_4_modal_image.png&quot; alt = &quot;Sample chart&quot; width = &quot;700&quot; height = &quot;429&quot;/&gt;
-    &lt;br&gt;
-    This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart.
-&lt;/div&gt;</code></pre>
-<p>This HTML is as simple as it can get: just an image and some text.</p>
-</div>
-<div id="modal2" class="section level2">
-<h2><span class="header-section-number">7.3</span> Example 2: responsive graph with Highcharts</h2>
-<p>If you would like to make your display of scientific data something other than a static image, there are many ways to do that. One way is via <a href="https://www.highcharts.com/blog/products/highcharts/">Highcharts</a>, which is a powerful Javascript graphing library. An important note is that, while Highcharts is generally free for non-commercial use, a license is required in all cases. For Highcharts licensing information, <a href="https://shop.highsoft.com/">click here</a>.</p>
-<p>In <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">infographic.html</a>, if you click on the blue box, a modal window will pop up in which the line graph is produced via Highcharts. This modal window exists in the modal subfolder as a HTML file named “modal_highcharts.html”.</p>
-<p>If you open that file in your code editor, you’ll see that in the <code>&lt;head&gt;</code> the necessary Highcharts Javascripts libraries are loaded and a CSS style is described. In the <code>&lt;body&gt;</code>, the container that will hold the Highcharts figure is defined and then the Highcharts function that will generate the figure is run.</p>
-<p>This is the simplest possible example of what can be done with Highcharts. Though it is set up to be a template for you to use, there is world more than can be done with Highcharts (<a href="https://www.highcharts.com/demo">click here</a> to see a gallery of the possibilities). And <a href="https://www.highcharts.com/docs/index">here is a complete Highcharts tutorial</a>.</p>
-</div>
-<div id="modal3" class="section level2">
-<h2><span class="header-section-number">7.4</span> Example 3: responsive graph with Google Charts (1 of 2)</h2>
-<p>Another method of displaying scientific data responsively is with the <a href="https://developers.google.com/chart">Google Charts</a> Javascript library. Like Highcharts, Google Charts is very powerful (here’s a <a href="https://developers.google.com/chart/interactive/docs/gallery">showcase</a>). Unlike Highcharts, Google Charts is free to use in all cases.</p>
-<p>In <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">infographic.html</a>, if you click on the purple hexagon, a modal window will pop up in which the line graph is produced via Google Charts. This modal window exists in the modal subfolder as a HTML file named “modal_google_charts.html”.</p>
-<p>If you open that file in your code editor, you’ll see that in the <code>&lt;head&gt;</code> two Google Charts Javascript libraries are loaded. Additionally, several Javascript functions are defined that will create the responsive figure. In the <code>&lt;body&gt;</code>, a container is defined on line 69, where the figure created by Google Charts will be positioned.</p>
-<p>One thing of note about this figure is that the constituent data comes from a <a href="https://docs.google.com/spreadsheets/d/1kb9SPsioe0163b2_xICUp1sOvYGQtBmiLiSkEeW1u-Y/edit#gid=0">live Google Sheet</a>. You can see this Google Sheet being called in line 22 of modal_google_charts.html. What allows this to work is that, in the sharing options for the Sheet, the “Get link” option is set to “Anyone on the internet can view” (see image below). The sharing options can be accessed by hitting the green Share button in the upper right of the Google Sheet.</p>
-<p><img src="google_sharing.png" /></p>
-<p>As with the Highcharts example, this modal window is a very simple example of what can be done with Google Charts. This window is a template for you to use and modify, but do check out the <a href="https://developers.google.com/chart/interactive/docs/gallery">Google Charts gallery</a> to get more ideas.</p>
-</div>
-<div id="example-4-responsive-graph-with-google-charts-2-of-2" class="section level2">
-<h2><span class="header-section-number">7.5</span> Example 4: responsive graph with Google Charts (2 of 2)</h2>
-<p>We provide a slight variant on creating responsive line charts with Google Charts. In <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">infographic.html</a>, if you click on the green star, a modal window will pop up in which the Google Charts-created graph contains a labeled blue bar over part of the x-axis. This modal window exists in the modal subfolder as a HTML file named “modal_google_charts2.html”.</p>
-<p>Creating a highlighted interval over the x-axis is not part of the core Google Charts functionality, so we created a Javascript library to add this feature (among others). This library can be found at <a href="https://github.com/noaa-iea/plotJS-extra">plotJS-extra</a>.</p>
-<p>The plotJS-extra function <code>GraphWrapper()</code>, which generates the highlighted x-axis interval, is called on lines 14-22 of modal_google_charts2.html. The parameters for <code>GraphWrapper()</code> are described <a href="https://github.com/noaa-iea/plotJS-extra/blob/main/README.md">here</a>.</p>
+<div id="responsive-data-tables" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Responsive data tables</h1>
+<p>Content to be added</p>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="html-layout-with-bootstrap.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="responsive-data-tables.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="modal-windows.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -215,15 +172,15 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/marinebon/infographiq/edit/main/06-modal-windows.Rmd",
+"link": "https://github.com/marinebon/infographiq/edit/main/07-data-table.Rmd",
 "text": "Edit"
 },
 "history": {
-"link": "https://github.com/marinebon/infographiq/commits/main/06-modal-windows.Rmd",
+"link": "https://github.com/marinebon/infographiq/commits/main/07-data-table.Rmd",
 "text": null
 },
 "view": {
-"link": "https://github.com/marinebon/infographiq/blob/main/06-modal-windows.Rmd",
+"link": "https://github.com/marinebon/infographiq/blob/main/07-data-table.Rmd",
 "text": null
 },
 "download": [["infographiq.pdf", "Adobe pdf"], ["infographiq.docx", "Word docx"]],

@@ -23,3 +23,7 @@ html-layout-with-bootstrap
 modal-windows
 what_is
 modal1
+modal2
+modal3
+example-4-responsive-graph-with-google-charts-2-of-2
+responsive-data-tables
