@@ -53,7 +53,7 @@ One thing of note about this figure is that the constituent data comes from a [l
 
 ![](google_sharing.png)
 
-As with the Highcharts example, this modal window is a very simple example of what can be done with Google Charts. This window is a template for you to use and modify, but do check out the [Google Charts gallery](https://developers.google.com/chart/interactive/docs/gallery) to get more ideas.
+As with the Highcharts example, this modal window is a very simple example of what can be done with Google Charts. This window is a template for you to use and modify, but do check out the [Google Charts gallery](https://developers.google.com/chart/interactive/docs/gallery) to get more ideas. And here is a [complete Google Charts tutorial](https://developers.google.com/chart/interactive/docs).
 
 ## Example 4: responsive graph with Google Charts (2 of 2)
 
