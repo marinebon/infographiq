@@ -8,6 +8,14 @@ In this section of the guide, we discuss how to create these modal windows. To g
 
 ![](modal_folder.png)
 
-These HTML files comprise a range of types of modal windows.
+These HTML files provide a range of examples for modal windows.
 
-Add more stuff here.
+## What is a modal window? {#what_is}
+
+A modal window is composed of any HTML file. When a clickable element in the image is clicked, the InfographiqJS function `link_svg()` overlays the associated HTML file over the image as an `<iframe>`. The association between clickable elements and HTML files is made in the Infographiq link table (see [the link table section](https://marinebon.org/infographiq/link-table.html) of the guide for more details on table construction).
+
+There are no restrictions on the HTML files that become the modal windows: they can be whatever you want. However, we provide several modal window examples to guide your thinking.
+
+## Modal window 1: static image {#modal1}
+
+Insert stuff here.
