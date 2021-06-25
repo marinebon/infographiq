@@ -15,7 +15,7 @@ inkscape_saving
 link_table
 table_structure
 table_columns
-the-infographiqjs-javascript
+infographic-javascript
 dependencies
 example
 parameters

@@ -31,7 +31,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-infographiqjs-javascript.html"/>
+<link rel="prev" href="infographic-javascript.html"/>
 <link rel="next" href="modal-windows.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -91,14 +91,14 @@
 <li class="chapter" data-level="3.2.4" data-path="image-creation.html"><a href="image-creation.html#inkscape_saving"><i class="fa fa-check"></i><b>3.2.4</b> Saving the image</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="link-table.html"><a href="link-table.html"><i class="fa fa-check"></i><b>4</b> The link table</a><ul>
+<li class="chapter" data-level="4" data-path="link-table.html"><a href="link-table.html"><i class="fa fa-check"></i><b>4</b> Link table</a><ul>
 <li class="chapter" data-level="4.1" data-path="link-table.html"><a href="link-table.html#table_structure"><i class="fa fa-check"></i><b>4.1</b> Table structure</a></li>
 <li class="chapter" data-level="4.2" data-path="link-table.html"><a href="link-table.html#table_columns"><i class="fa fa-check"></i><b>4.2</b> Table columns</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html"><i class="fa fa-check"></i><b>5</b> The InfographiqJS Javascript</a><ul>
-<li class="chapter" data-level="5.1" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#dependencies"><i class="fa fa-check"></i><b>5.1</b> Dependencies</a></li>
-<li class="chapter" data-level="5.2" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#example"><i class="fa fa-check"></i><b>5.2</b> Example</a></li>
-<li class="chapter" data-level="5.3" data-path="the-infographiqjs-javascript.html"><a href="the-infographiqjs-javascript.html#parameters"><i class="fa fa-check"></i><b>5.3</b> Function parameters</a></li>
+<li class="chapter" data-level="5" data-path="infographic-javascript.html"><a href="infographic-javascript.html"><i class="fa fa-check"></i><b>5</b> Infographic Javascript</a><ul>
+<li class="chapter" data-level="5.1" data-path="infographic-javascript.html"><a href="infographic-javascript.html#dependencies"><i class="fa fa-check"></i><b>5.1</b> Dependencies</a></li>
+<li class="chapter" data-level="5.2" data-path="infographic-javascript.html"><a href="infographic-javascript.html#example"><i class="fa fa-check"></i><b>5.2</b> Example</a></li>
+<li class="chapter" data-level="5.3" data-path="infographic-javascript.html"><a href="infographic-javascript.html#parameters"><i class="fa fa-check"></i><b>5.3</b> Function parameters</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="html-layout-with-bootstrap.html"><a href="html-layout-with-bootstrap.html"><i class="fa fa-check"></i><b>6</b> HTML Layout with Bootstrap</a></li>
 <li class="chapter" data-level="7" data-path="modal-windows.html"><a href="modal-windows.html"><i class="fa fa-check"></i><b>7</b> Modal windows</a><ul>
@@ -154,11 +154,10 @@
 <ul>
 <li><p>The “col” component at the beginning indicates that this class has something to do with Bootstrap columns.</p></li>
 <li><p>The “9” component specifies that this container is to be 9 columns wide. Bootstrap allows a maximum width of 12 columns, so therefore 9/12 of the width of the row (or 75%) is allocated for the Infographiq image.</p></li>
-<li><p>The “md” component stands for “medium”. It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.</p>
-<div id="svg1">
-
-</div></li>
+<li><p>The “md” component stands for “medium”. It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.</p></li>
 </ul>
+<!-- -->
+<pre><code>&lt;div id = &quot;svg1&quot;&gt;&lt;/div&gt;</code></pre>
 <p>Fourth, let’s create the container where the InfographiqJS Javascript will position the image. In the InfographiqJS function <code>link_svg()</code> further down on the HTML page ‘infographic.html’, we’ll provide ‘svg1’ as the value for the parameter <strong>svg_id</strong>. In <a href="https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters">another section of this guide</a>, we go into much more detail into <code>link_svg()</code>.</p>
 <pre><code>&lt;div class=&quot;col-md-3&quot;&gt;</code></pre>
 <p>Fifth, we define the container that will hold the Infographiq table of contents with the Bootstrap class “col-md-3”. This class works very similarly to “col-md-9” defined earlier, except that this container will be three columns wide. As there are a total of 12 columns to work with, this container will take up 25% of the width of the row.</p>
@@ -171,7 +170,7 @@
           </div>
         </div>
       </div>
-<a href="the-infographiqjs-javascript.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="infographic-javascript.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="modal-windows.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
