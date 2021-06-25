@@ -1,4 +1,4 @@
-# The InfographiqJS Javascript
+# Infographic Javascript
 
 The Infographiq method connects a clickable image with scientific data, using a Javascript library called InfographiqJS ([located here](https://marinebon.org/infographiqJS/)) as shown in the image below:
 

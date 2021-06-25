@@ -36,6 +36,9 @@ Third, let's define the container that will hold the Infographiq image with the 
 
 -   The "md" component stands for "medium". It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.
 
+```{=html}
+<!-- -->
+```
     <div id = "svg1"></div>
 
 Fourth, let's create the container where the InfographiqJS Javascript will position the image. In the InfographiqJS function `link_svg()` further down on the HTML page 'infographic.html', we'll provide 'svg1' as the value for the parameter **svg_id**. In [another section of this guide](https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters), we go into much more detail into `link_svg()`.

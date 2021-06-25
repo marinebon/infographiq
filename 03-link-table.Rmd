@@ -1,4 +1,4 @@
-# The link table {#link_table}
+# Link table {#link_table}
 
 The Infographiq method connects a clickable image with scientific data. Infographiq uses a table to know what data is to be associated with what parts of the image. This is shown in the image below (the gray box titled Table in the upper right of the image):
 
