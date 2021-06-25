@@ -26,10 +26,10 @@ infographiq-elements - Google Drawing
 ```
 This guide details how to prepare:
 
-1.  an Infographiq-ready image,
-2.  the "modal windows" in which data is shown,
-3.  the link table that connects the image with the modal windows,
-4.  a web page to embed an Infographiq-enabled image.
+1.  [an Infographiq-ready image](https://marinebon.org/infographiq/image-creation.html),
+2.  [the "modal windows" in which data is shown](https://marinebon.org/infographiq/modal-windows.html),
+3.  [the link table that connects the image with the modal windows](https://marinebon.org/infographiq/link-table.html),
+4.  [a web page to embed an Infographiq-enabled image](https://marinebon.org/infographiq/html-layout-with-bootstrap.html).
 
 You can find a demonstration of Infographiq, showing many of the options available with the associated Javascript library, [here](https://marinebon.org/infographiqJS/demo.html).
 

@@ -11,7 +11,7 @@ To get started, if you haven't do so already, [download the example folder](http
           <div id = "svg1"></div>
         </div>
         <div class="col-md-3">
-          <ul class="panel-group" id="toc1" role="tablist" aria-multiselectable="true"></ul>
+          <ul id="toc1"></ul>
         </div>
       </div>
     </div>
@@ -46,10 +46,6 @@ Fourth, let's create the container where the InfographiqJS Javascript will posit
 
 Fifth, we define the container that will hold the Infographiq table of contents with the Bootstrap class "col-md-3". This class works very similarly to "col-md-9" defined earlier, except that this container will be three columns wide. As there are a total of 12 columns to work with, this container will take up 25% of the width of the row.
 
-    <ul class="panel-group" id="toc1" role="tablist" aria-multiselectable="true"></ul>
+    <ul id="toc1"></ul>
 
 Sixth, we create an unordered list where the InfographiqJS Javascript will position the table of contents. In the InfographiqJS function `link_svg()` further down on the HTML page 'infographic.html', we'll provide 'toc1' as the value for the parameter **toc_id**. In [another section of this guide](https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters), we go into much more detail into `link_svg()`.
-
-This unordered list is also given the Bootstrap class "panel-group". This comes into play if "accordion" is selected as the **toc_style** in `link_svg()`, as the accordion is a collection of Bootstrap panels. For more information on the accordion structure in Bootstrap, [click here](https://getbootstrap.com/docs/3.4/javascript/#collapse).
-
-The remaining tags in the unordered list, `role` and `aria-multiselectable`, are used to make the table of contents accessible to those with disabilities.

@@ -1,1 +1,13 @@
 # Modal windows
+
+With the Infographiq method, when a clickable element of an image is clicked, a "modal window" containing data appears on the screen (see image below). To see examples of modal windows in action, check out the [Infographiq demonstration page](https://marinebon.org/infographiqJS/demo.html) and click on any element of the image that highlights.
+
+<img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/>
+
+In this section of the guide, we discuss how to create these modal windows. To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a subfolder called "modals" that contains several HTML files (see image below).
+
+![](modal_folder.png)
+
+These HTML files comprise a range of types of modal windows.
+
+Add more stuff here.
