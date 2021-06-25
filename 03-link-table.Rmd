@@ -46,7 +46,7 @@ To get started, if you haven't do so already, [download the example folder](http
 
 -   **title (optional):** the text that should appear on the image when the mouse is over the clickable element (move the mouse over [the example image](https://marinebon.org/infographiqJS/infographiq_example/infographic.html) to see what this means). If there is no title column, then the name given in the "icon" column will show up on the image instead.
 
--   **link (optional):** when a clickable element of an image is clicked, Infographiq loads an external HTML file above the image as an `<iframe>` ([more here](https://www.w3schools.com/html/html_iframe.asp) on what an `<iframe>` is). This external HTML file contains the data for the modal window. Other sections of this guide go into detail about the construction of these external HTML files, so we will skip that conversation here.
+-   **link (optional):** when a clickable element of an image is clicked, Infographiq loads an external HTML file above the image as an `<iframe>` ([more here](https://www.w3schools.com/html/html_iframe.asp) on what an `<iframe>` is). This external HTML file contains the data for the modal window. [Another section of this guide](https://marinebon.org/infographiq/modal-windows.html) goes into detail about the construction of these external HTML files, so we will skip that conversation here.
 
     For the purposes of this column, all that is needed is the link to the external HTML file, with both relative and absolute links allowed. In the case of the Infographiq example, all of the external HTML files are contained within the example folder, within a subfolder called "modals". It is isn't necessary for a modals subfolder to exist, but we recommend it for ease of organization.
 
