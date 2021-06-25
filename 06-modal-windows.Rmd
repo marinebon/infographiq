@@ -16,6 +16,49 @@ A modal window is composed of any HTML file. When a clickable element in the ima
 
 There are no restrictions on the HTML files that become the modal windows: they can be whatever you want. However, we provide several modal window examples to guide your thinking.
 
-## Modal window 1: static image {#modal1}
+## Example 1: static image {#modal1}
 
-Insert stuff here.
+The simplest way to display scientific data is as an image. To demonstrate, in the Infographiq example folder, you'll find a HTML file called "infographic.html" (also [visible here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html)). If you open up infographic.html - and click on the red circle in the picture - a modal window will pop up in which you'll see an image of a line graph.
+
+This modal window exists in the modal subfolder as a HTML file named "modal_image.html". If you open that file in your code editor, here's what the `<body>` looks like:
+
+    <div>
+        <h3 style="text-align:center;">A Basic Line Chart Using an Image</h3>
+        <img src="sample_chart_4_modal_image.png" alt = "Sample chart" width = "700" height = "429"/>
+        <br>
+        This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart.
+    </div>
+
+This HTML is as simple as it can get: just an image and some text.
+
+## Example 2: responsive graph with Highcharts {#modal2}
+
+If you would like to make your display of scientific data something other than a static image, there are many ways to do that. One way is via [Highcharts](https://www.highcharts.com/blog/products/highcharts/), which is a powerful Javascript graphing library. An important note is that, while Highcharts is generally free for non-commercial use, a license is required in all cases. For Highcharts licensing information, [click here](https://shop.highsoft.com/).
+
+In [infographic.html](https://marinebon.org/infographiqJS/infographiq_example/infographic.html), if you click on the blue box, a modal window will pop up in which the line graph is produced via Highcharts. This modal window exists in the modal subfolder as a HTML file named "modal_highcharts.html".
+
+If you open that file in your code editor, you'll see that in the `<head>` the necessary Highcharts Javascripts libraries are loaded and a CSS style is described. In the `<body>`, the container that will hold the Highcharts figure is defined and then the Highcharts function that will generate the figure is run.
+
+This is the simplest possible example of what can be done with Highcharts. Though it is set up to be a template for you to use, there is world more than can be done with Highcharts ([click here](https://www.highcharts.com/demo) to see a gallery of the possibilities). And [here is a complete Highcharts tutorial](https://www.highcharts.com/docs/index).
+
+## Example 3: responsive graph with Google Charts (1 of 2) {#modal3}
+
+Another method of displaying scientific data responsively is with the [Google Charts](https://developers.google.com/chart) Javascript library. Like Highcharts, Google Charts is very powerful (here's a [showcase](https://developers.google.com/chart/interactive/docs/gallery)). Unlike Highcharts, Google Charts is free to use in all cases.
+
+In [infographic.html](https://marinebon.org/infographiqJS/infographiq_example/infographic.html), if you click on the purple hexagon, a modal window will pop up in which the line graph is produced via Google Charts. This modal window exists in the modal subfolder as a HTML file named "modal_google_charts.html".
+
+If you open that file in your code editor, you'll see that in the `<head>` two Google Charts Javascript libraries are loaded. Additionally, several Javascript functions are defined that will create the responsive figure. In the `<body>`, a container is defined on line 69, where the figure created by Google Charts will be positioned.
+
+One thing of note about this figure is that the constituent data comes from a [live Google Sheet](https://docs.google.com/spreadsheets/d/1kb9SPsioe0163b2_xICUp1sOvYGQtBmiLiSkEeW1u-Y/edit#gid=0). You can see this Google Sheet being called in line 22 of modal_google_charts.html. What allows this to work is that, in the sharing options for the Sheet, the "Get link" option is set to "Anyone on the internet can view" (see image below). The sharing options can be accessed by hitting the green Share button in the upper right of the Google Sheet.
+
+![](google_sharing.png)
+
+As with the Highcharts example, this modal window is a very simple example of what can be done with Google Charts. This window is a template for you to use and modify, but do check out the [Google Charts gallery](https://developers.google.com/chart/interactive/docs/gallery) to get more ideas.
+
+## Example 4: responsive graph with Google Charts (2 of 2)
+
+We provide a slight variant on creating responsive line charts with Google Charts. In [infographic.html](https://marinebon.org/infographiqJS/infographiq_example/infographic.html), if you click on the green star, a modal window will pop up in which the Google Charts-created graph contains a labeled blue bar over part of the x-axis. This modal window exists in the modal subfolder as a HTML file named "modal_google_charts2.html".
+
+Creating a highlighted interval over the x-axis is not part of the core Google Charts functionality, so we created a Javascript library to add this feature (among others). This library can be found at [plotJS-extra](https://github.com/noaa-iea/plotJS-extra).
+
+The plotJS-extra function `GraphWrapper()`, which generates the highlighted x-axis interval, is called on lines 14-22 of modal_google_charts2.html. The parameters for `GraphWrapper()` are described [here](https://github.com/noaa-iea/plotJS-extra/blob/main/README.md).
