@@ -21,3 +21,5 @@ example
 parameters
 html-layout-with-bootstrap
 modal-windows
+what_is
+modal1
