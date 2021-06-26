@@ -117,7 +117,7 @@ Another option though would be to save the data table as a Google Sheet. In fact
 
 The reason this can work is that Google Sheets allows for the publishing of data as a URL-accessible and csv-delimited file. Here's how to do that. While in the target Google Sheet, click File \> "Publish to the web".
 
-![](publish_web.png){width="242"}
+![](publish_web.png){width="303"}
 
 In the window that pops up (see image below):
 
@@ -133,8 +133,8 @@ In the window that pops up (see image below):
 
 6.  A URL will appear in the window in a text box. This URL is the link to the csv-version of the google sheet. Save this URL and use it as the value for the variable `csvLink1`.
 
-![](publish_web2.png){width="346"}
+![](publish_web2.png){width="415"}
 
 This approach will only work if your version of Google Sheets allows you to share it outside of your organization. Take a look at the bottom of your "Publish to the web" window (see below). If you are unable to unclick the "Restrict access to the following" checkbox, this Google Sheets method of saving the data won't work for you.
 
-![](publish_web3.png){width="346"}
+![](publish_web3.png){width="415"}
