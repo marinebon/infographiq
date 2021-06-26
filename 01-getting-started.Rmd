@@ -17,22 +17,26 @@ We'll be providing a very fast pass through Javascript here, but for a more deta
 
 1A. Loading an external Javascript library. Line 12 of the infographic.html file reads as follows:
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+``` {.html}
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+```
 
 This line loads in a bunch of Javascript code written elsewhere - which is known as a Javascript library. In this case, we're loading in Bootstrap - a well-known Javascript library
 
 1B. Writing Javascript code directly within a page. Lines 32-41 of the infographic.html file read as follows:
 
-    <script>
-        link_svg({
-            svg: "illustrator_example.svg", 
-            csv: "icon_link.csv", 
-            svg_id: "svg1", 
-            toc_id: "toc1",
-            toc_style: "sectioned_list",
-            text_toggle: "toggle_off",
-            svg_filter: "illustrator_example.svg"});
-    </script>
+``` {.html}
+<script>
+    link_svg({
+        svg: "illustrator_example.svg", 
+        csv: "icon_link.csv", 
+        svg_id: "svg1", 
+        toc_id: "toc1",
+        toc_style: "sectioned_list",
+        text_toggle: "toggle_off",
+        svg_filter: "illustrator_example.svg"});
+</script>
+```
 
 Here, within the confines of the `<script>` tags, we're directly writing some Javascript code. In this particular case, we're calling a function called `link_svg` (more on this function later).
 
@@ -42,7 +46,9 @@ Here, within the confines of the `<script>` tags, we're directly writing some Ja
 
 All those things are values that are being fed into the function. For an example, check out the third line of 1B:
 
-    svg: "illustrator_example.svg",
+``` {.javascript}
+svg: "illustrator_example.svg",
+```
 
 We see here a few things. There is a parameter in the function called `svg` and we are going to give that parameter the value "illustrator_example.svg". Lastly, we are going to finish out with a comma, to let Javascript know that more values are coming.
 

@@ -22,12 +22,14 @@ The simplest way to display scientific data is as an image. To demonstrate, in t
 
 This modal window exists in the modal subfolder as a HTML file named "modal_image.html". If you open that file in your code editor, here's what the `<body>` looks like:
 
-    <div>
-        <h3 style="text-align:center;">A Basic Line Chart Using an Image</h3>
-        <img src="sample_chart_4_modal_image.png" alt = "Sample chart" width = "700" height = "429"/>
-        <br>
-        This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart.
-    </div>
+``` {.html}
+<div>
+    <h3 style="text-align:center;">A Basic Line Chart Using an Image</h3>
+    <img src="sample_chart_4_modal_image.png" alt = "Sample chart" width = "700" height = "429"/>
+    <br>
+    This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart. This is sample explanatory text about the chart.
+</div>
+```
 
 This HTML is as simple as it can get: just an image and some text.
 

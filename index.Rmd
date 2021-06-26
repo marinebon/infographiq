@@ -14,7 +14,11 @@ description: "This is a guide to the Infographiq software library for displaying
 
 # Introduction
 
-This document is a guide to using the Infographiq method for displaying data in a user-friendly way. The Infographiq method uses a combination of Javascript and R to produce clickable art that acts as an interface for users to access scientific data. An illustration of the Infographiq method can be seen below.
+This document is a guide to using the Infographiq method for displaying data in a user-friendly way.
+
+## Infographiq: art + data
+
+The Infographiq method uses a combination of Javascript and R to produce clickable art that acts as an interface for users to access scientific data. An illustration of the Infographiq method can be seen below.
 
 <img src="https://docs.google.com/drawings/d/1i0gjyNsWqqTKJqDJ5SPbqHJLWer0OVcuvhySt2ZGgwk/export/svg" alt="Image of Infographiq approach"/>
 
@@ -29,8 +33,11 @@ This guide details how to prepare:
 1.  [an Infographiq-ready image](https://marinebon.org/infographiq/image-creation.html),
 2.  [the "modal windows" in which data is shown](https://marinebon.org/infographiq/modal-windows.html),
 3.  [the link table that connects the image with the modal windows](https://marinebon.org/infographiq/link-table.html),
-4.  [a web page to embed an Infographiq-enabled image](https://marinebon.org/infographiq/html-layout-with-bootstrap.html).
+4.  [the relevant Javascript functions](https://marinebon.org/infographiq/infographic-javascript.html),
+5.  [a web page to embed an Infographiq-enabled image](https://marinebon.org/infographiq/html-layout-with-bootstrap.html).
 
 You can find a demonstration of Infographiq, showing many of the options available with the associated Javascript library, [here](https://marinebon.org/infographiqJS/demo.html).
 
-Infographiq can also display data in modal window form via a user-clickable table. In [this demonstration table](https://marinebon.org/infographiqJS/table_modalv1.html), click on any row to see the associated modal window.
+## Infographiq: responsive tables
+
+Infographiq can also display data via a user-clickable table. In [this demonstration table](https://marinebon.org/infographiqJS/table_modalv1.html), click on any row to see the associated figure. More information on these responsive tables can be found [elsewhere in this guide](https://marinebon.org/infographiq/responsive-data-tables.html).
