@@ -1,4 +1,6 @@
 introduction
+infographiq-art-data
+infographiq-responsive-tables
 getting_started
 javascript_basics
 localhost
@@ -27,3 +29,6 @@ modal2
 modal3
 example-4-responsive-graph-with-google-charts-2-of-2
 responsive-data-tables
+how_works
+data
+csv_location

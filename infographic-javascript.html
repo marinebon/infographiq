@@ -24,7 +24,7 @@
 <meta name="author" content="Ben Best, Jai Ranganathan" />
 
 
-<meta name="date" content="2021-06-25" />
+<meta name="date" content="2021-06-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -73,7 +137,10 @@
 <li><a href="./">Infographiq</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#infographiq-art-data"><i class="fa fa-check"></i><b>1.1</b> Infographiq: art + data</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#infographiq-responsive-tables"><i class="fa fa-check"></i><b>1.2</b> Infographiq: responsive tables</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a><ul>
 <li class="chapter" data-level="2.1" data-path="getting-started.html"><a href="getting-started.html#javascript_basics"><i class="fa fa-check"></i><b>2.1</b> The basics of Javascript</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started.html"><a href="getting-started.html#localhost"><i class="fa fa-check"></i><b>2.2</b> Running Javascript on your own machine</a></li>
@@ -108,7 +175,13 @@
 <li class="chapter" data-level="7.4" data-path="modal-windows.html"><a href="modal-windows.html#modal3"><i class="fa fa-check"></i><b>7.4</b> Example 3: responsive graph with Google Charts (1 of 2)</a></li>
 <li class="chapter" data-level="7.5" data-path="modal-windows.html"><a href="modal-windows.html#example-4-responsive-graph-with-google-charts-2-of-2"><i class="fa fa-check"></i><b>7.5</b> Example 4: responsive graph with Google Charts (2 of 2)</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html"><i class="fa fa-check"></i><b>8</b> Responsive data tables</a></li>
+<li class="chapter" data-level="8" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html"><i class="fa fa-check"></i><b>8</b> Responsive data tables</a><ul>
+<li class="chapter" data-level="8.1" data-path="infographic-javascript.html"><a href="infographic-javascript.html#dependencies"><i class="fa fa-check"></i><b>8.1</b> Dependencies</a></li>
+<li class="chapter" data-level="8.2" data-path="infographic-javascript.html"><a href="infographic-javascript.html#parameters"><i class="fa fa-check"></i><b>8.2</b> Function parameter</a></li>
+<li class="chapter" data-level="8.3" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#how_works"><i class="fa fa-check"></i><b>8.3</b> How <code>link_table()</code> works</a></li>
+<li class="chapter" data-level="8.4" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#data"><i class="fa fa-check"></i><b>8.4</b> Data structure</a></li>
+<li class="chapter" data-level="8.5" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#csv_location"><i class="fa fa-check"></i><b>8.5</b> Data table location</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -138,7 +211,7 @@
 <div id="dependencies" class="section level2">
 <h2><span class="header-section-number">5.1</span> Dependencies</h2>
 <p>In order for <code>link_svg()</code> to work, it relies upon other Javascript and CSS libraries that must be loaded prior to the InfographiqJS Javascript being loaded. These other libraries are known as the <strong>dependencies</strong> for InfographiqJS.</p>
-<p><code>link_svg</code> Dependencies:</p>
+<p><code>link_svg()</code> Dependencies:</p>
 <ol style="list-style-type: decimal">
 <li><p><a href="https://jquery.com/">jQuery (version 1.9.1)</a>.</p></li>
 <li><p><a href="https://d3js.org/">D3 (version 5)</a>.</p></li>
@@ -149,26 +222,26 @@
 <div id="example" class="section level2">
 <h2><span class="header-section-number">5.2</span> Example</h2>
 <p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 9-15 in the <code>&lt;head&gt;</code> section of the HTML, which read in as follows, load in the dependencies for InfographiqJS.</p>
-<pre><code>&lt;script src=&quot;https://code.jquery.com/jquery-1.9.1.min.js&quot;
-    integrity=&quot;sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=&quot;
-    crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
-&lt;script src= &quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://d3js.org/d3.v5.min.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css&quot; integrity=&quot;sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==&quot; crossorigin=&quot;anonymous&quot; /&gt;</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="infographic-javascript.html#cb5-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://code.jquery.com/jquery-1.9.1.min.js&quot;</span></span>
+<span id="cb5-2"><a href="infographic-javascript.html#cb5-2"></a><span class="ot">    integrity=</span><span class="st">&quot;sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=&quot;</span></span>
+<span id="cb5-3"><a href="infographic-javascript.html#cb5-3"></a><span class="ot">    crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-4"><a href="infographic-javascript.html#cb5-4"></a><span class="kw">&lt;script</span><span class="ot"> src=</span> <span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-5"><a href="infographic-javascript.html#cb5-5"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://d3js.org/d3.v5.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-6"><a href="infographic-javascript.html#cb5-6"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-7"><a href="infographic-javascript.html#cb5-7"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css&quot;</span><span class="ot"> integrity=</span><span class="st">&quot;sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==&quot;</span><span class="ot"> crossorigin=</span><span class="st">&quot;anonymous&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
 <p>Lines 31-41 of the HTML are where we load in the InfographiqJS Javascript and CSS. We also call the InfographiqJS function <code>link_svg()</code>. This placement is very important: the InfographiqJS Javascript, CSS, and <code>link_svg()</code> must show up at the bottom of the <code>&lt;body&gt;</code> of the HTML.</p>
-<pre><code>&lt;script src=&#39;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js&#39;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css&quot;&gt;
-&lt;script&gt;
-    link_svg({
-      svg: &quot;illustrator_example.svg&quot;, 
-      csv: &quot;icon_link.csv&quot;, 
-      svg_id: &quot;svg1&quot;, 
-      toc_id: &quot;toc1&quot;,
-      toc_style: &quot;sectioned_list&quot;,
-      text_toggle: &quot;toggle_off&quot;,
-      svg_filter: &quot;illustrator_example.svg&quot;});
-&lt;/script&gt;</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="infographic-javascript.html#cb6-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&#39;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js&#39;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb6-2"><a href="infographic-javascript.html#cb6-2"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb6-3"><a href="infographic-javascript.html#cb6-3"></a><span class="kw">&lt;script&gt;</span></span>
+<span id="cb6-4"><a href="infographic-javascript.html#cb6-4"></a>    <span class="at">link_svg</span>(<span class="op">{</span></span>
+<span id="cb6-5"><a href="infographic-javascript.html#cb6-5"></a>      <span class="dt">svg</span><span class="op">:</span> <span class="st">&quot;illustrator_example.svg&quot;</span><span class="op">,</span> </span>
+<span id="cb6-6"><a href="infographic-javascript.html#cb6-6"></a>      <span class="dt">csv</span><span class="op">:</span> <span class="st">&quot;icon_link.csv&quot;</span><span class="op">,</span> </span>
+<span id="cb6-7"><a href="infographic-javascript.html#cb6-7"></a>      <span class="dt">svg_id</span><span class="op">:</span> <span class="st">&quot;svg1&quot;</span><span class="op">,</span> </span>
+<span id="cb6-8"><a href="infographic-javascript.html#cb6-8"></a>      <span class="dt">toc_id</span><span class="op">:</span> <span class="st">&quot;toc1&quot;</span><span class="op">,</span></span>
+<span id="cb6-9"><a href="infographic-javascript.html#cb6-9"></a>      <span class="dt">toc_style</span><span class="op">:</span> <span class="st">&quot;sectioned_list&quot;</span><span class="op">,</span></span>
+<span id="cb6-10"><a href="infographic-javascript.html#cb6-10"></a>      <span class="dt">text_toggle</span><span class="op">:</span> <span class="st">&quot;toggle_off&quot;</span><span class="op">,</span></span>
+<span id="cb6-11"><a href="infographic-javascript.html#cb6-11"></a>      <span class="dt">svg_filter</span><span class="op">:</span> <span class="st">&quot;illustrator_example.svg&quot;</span><span class="op">}</span>)<span class="op">;</span></span>
+<span id="cb6-12"><a href="infographic-javascript.html#cb6-12"></a><span class="kw">&lt;/script&gt;</span></span></code></pre></div>
 </div>
 <div id="parameters" class="section level2">
 <h2><span class="header-section-number">5.3</span> Function parameters</h2>

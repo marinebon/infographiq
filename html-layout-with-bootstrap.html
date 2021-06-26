@@ -24,7 +24,7 @@
 <meta name="author" content="Ben Best, Jai Ranganathan" />
 
 
-<meta name="date" content="2021-06-25" />
+<meta name="date" content="2021-06-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -55,6 +55,70 @@
 <script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -73,7 +137,10 @@
 <li><a href="./">Infographiq</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#infographiq-art-data"><i class="fa fa-check"></i><b>1.1</b> Infographiq: art + data</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#infographiq-responsive-tables"><i class="fa fa-check"></i><b>1.2</b> Infographiq: responsive tables</a></li>
+</ul></li>
 <li class="chapter" data-level="2" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>2</b> Getting Started</a><ul>
 <li class="chapter" data-level="2.1" data-path="getting-started.html"><a href="getting-started.html#javascript_basics"><i class="fa fa-check"></i><b>2.1</b> The basics of Javascript</a></li>
 <li class="chapter" data-level="2.2" data-path="getting-started.html"><a href="getting-started.html#localhost"><i class="fa fa-check"></i><b>2.2</b> Running Javascript on your own machine</a></li>
@@ -108,7 +175,13 @@
 <li class="chapter" data-level="7.4" data-path="modal-windows.html"><a href="modal-windows.html#modal3"><i class="fa fa-check"></i><b>7.4</b> Example 3: responsive graph with Google Charts (1 of 2)</a></li>
 <li class="chapter" data-level="7.5" data-path="modal-windows.html"><a href="modal-windows.html#example-4-responsive-graph-with-google-charts-2-of-2"><i class="fa fa-check"></i><b>7.5</b> Example 4: responsive graph with Google Charts (2 of 2)</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html"><i class="fa fa-check"></i><b>8</b> Responsive data tables</a></li>
+<li class="chapter" data-level="8" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html"><i class="fa fa-check"></i><b>8</b> Responsive data tables</a><ul>
+<li class="chapter" data-level="8.1" data-path="infographic-javascript.html"><a href="infographic-javascript.html#dependencies"><i class="fa fa-check"></i><b>8.1</b> Dependencies</a></li>
+<li class="chapter" data-level="8.2" data-path="infographic-javascript.html"><a href="infographic-javascript.html#parameters"><i class="fa fa-check"></i><b>8.2</b> Function parameter</a></li>
+<li class="chapter" data-level="8.3" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#how_works"><i class="fa fa-check"></i><b>8.3</b> How <code>link_table()</code> works</a></li>
+<li class="chapter" data-level="8.4" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#data"><i class="fa fa-check"></i><b>8.4</b> Data structure</a></li>
+<li class="chapter" data-level="8.5" data-path="responsive-data-tables.html"><a href="responsive-data-tables.html#csv_location"><i class="fa fa-check"></i><b>8.5</b> Data table location</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -133,35 +206,34 @@
 <h1><span class="header-section-number">Chapter 6</span> HTML Layout with Bootstrap</h1>
 <p>The Infographiq approach uses Bootstrap for HTML page layout. <a href="https://getbootstrap.com/docs/3.4/javascript/">Bootstrap</a> is a widely-used Javascript library for controlling layout. In this section of the guide, we give a brief overview to how Bootstrap works, within the Infographiq context. For a much more extensive Bootstrap tutorial, click <a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">here</a>.</p>
 <p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 18-28 in the <code>&lt;body&gt;</code> section of the HTML read as follows:</p>
-<pre><code>&lt;!-- define bootstrap layout that will contain the infographic --&gt;
-&lt;div class=&quot;container-fluid&quot;&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-md-9&quot;&gt;
-      &lt;div id = &quot;svg1&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-md-3&quot;&gt;
-      &lt;ul id=&quot;toc1&quot;&gt;&lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="html-layout-with-bootstrap.html#cb7-1"></a><span class="co">&lt;!-- define bootstrap layout that will contain the infographic --&gt;</span></span>
+<span id="cb7-2"><a href="html-layout-with-bootstrap.html#cb7-2"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb7-3"><a href="html-layout-with-bootstrap.html#cb7-3"></a>  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb7-4"><a href="html-layout-with-bootstrap.html#cb7-4"></a>    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-md-9&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb7-5"><a href="html-layout-with-bootstrap.html#cb7-5"></a>      <span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span> <span class="st">&quot;svg1&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb7-6"><a href="html-layout-with-bootstrap.html#cb7-6"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb7-7"><a href="html-layout-with-bootstrap.html#cb7-7"></a>    <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-md-3&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb7-8"><a href="html-layout-with-bootstrap.html#cb7-8"></a>      <span class="kw">&lt;ul</span><span class="ot"> id=</span><span class="st">&quot;toc1&quot;</span><span class="kw">&gt;&lt;/ul&gt;</span></span>
+<span id="cb7-9"><a href="html-layout-with-bootstrap.html#cb7-9"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb7-10"><a href="html-layout-with-bootstrap.html#cb7-10"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb7-11"><a href="html-layout-with-bootstrap.html#cb7-11"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
 <p>This section of the HTML uses Bootstrap to define the layout within which the Infographiq infographic will be placed. Let’s go through it line by line.</p>
-<pre><code>&lt;div class=&quot;container-fluid&quot;&gt;</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="html-layout-with-bootstrap.html#cb8-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;container-fluid&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
 <p>First, let’s define the container that will hold the Infographiq content. For this, we use the Bootstrap class “container-fluid”, which indicates that the container should take up the full width of the viewport (which is usually just the width of the browser window).</p>
-<pre><code>&lt;div class=&quot;row&quot;&gt;</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="html-layout-with-bootstrap.html#cb9-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;row&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
 <p>Second, we’ll use the Bootstrap class “row” to define the container that will hold the Infographiq content. Bootstrap uses <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_system.asp">a grid system</a> of columns and rows to control layout. Here, we are indicating that the Infographiq content will all be in a single row.</p>
-<pre><code>&lt;div class=&quot;col-md-9&quot;&gt;</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="html-layout-with-bootstrap.html#cb10-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-md-9&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
 <p>Third, let’s define the container that will hold the Infographiq image with the Bootstrap class “col-md-9”. There are three components to this class.</p>
 <ul>
 <li><p>The “col” component at the beginning indicates that this class has something to do with Bootstrap columns.</p></li>
 <li><p>The “9” component specifies that this container is to be 9 columns wide. Bootstrap allows a maximum width of 12 columns, so therefore 9/12 of the width of the row (or 75%) is allocated for the Infographiq image.</p></li>
 <li><p>The “md” component stands for “medium”. It refers to the width of the screen on which the page is being viewed. If the screen is equal to or greater than 992 pixels wide, then everything in the row will be viewed in a single horizontal row. If the screen is smaller than that, then the stuff in the row will be stacked on top of each other. The reason for doing this is that, on small screens, legibility will be better if the elements of the page are stacked vertically instead of horizontally.</p></li>
 </ul>
-<!-- -->
-<pre><code>&lt;div id = &quot;svg1&quot;&gt;&lt;/div&gt;</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="html-layout-with-bootstrap.html#cb11-1"></a><span class="kw">&lt;div</span><span class="ot"> id</span> <span class="ot">=</span> <span class="st">&quot;svg1&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span></code></pre></div>
 <p>Fourth, let’s create the container where the InfographiqJS Javascript will position the image. In the InfographiqJS function <code>link_svg()</code> further down on the HTML page ‘infographic.html’, we’ll provide ‘svg1’ as the value for the parameter <strong>svg_id</strong>. In <a href="https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters">another section of this guide</a>, we go into much more detail into <code>link_svg()</code>.</p>
-<pre><code>&lt;div class=&quot;col-md-3&quot;&gt;</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="html-layout-with-bootstrap.html#cb12-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;col-md-3&quot;</span><span class="kw">&gt;</span></span></code></pre></div>
 <p>Fifth, we define the container that will hold the Infographiq table of contents with the Bootstrap class “col-md-3”. This class works very similarly to “col-md-9” defined earlier, except that this container will be three columns wide. As there are a total of 12 columns to work with, this container will take up 25% of the width of the row.</p>
-<pre><code>&lt;ul id=&quot;toc1&quot;&gt;&lt;/ul&gt;</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href="html-layout-with-bootstrap.html#cb13-1"></a><span class="kw">&lt;ul</span><span class="ot"> id=</span><span class="st">&quot;toc1&quot;</span><span class="kw">&gt;&lt;/ul&gt;</span></span></code></pre></div>
 <p>Sixth, we create an unordered list where the InfographiqJS Javascript will position the table of contents. In the InfographiqJS function <code>link_svg()</code> further down on the HTML page ‘infographic.html’, we’ll provide ‘toc1’ as the value for the parameter <strong>toc_id</strong>. In <a href="https://marinebon.org/infographiq/the-infographiqjs-javascript.html#parameters">another section of this guide</a>, we go into much more detail into <code>link_svg()</code>.</p>
 
 </div>
