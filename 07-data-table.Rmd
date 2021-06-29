@@ -84,7 +84,7 @@ The data loaded into `link_table()` via the function parameter `csvLink` needs t
 
 3.  The column order matters (meaning, keep the column order in the Google Sheet) .
 
-**Table columns (all required)** {\#columns}
+**Table columns (all required)**
 
 -   **EPU**: Ecological Production Unit (shown in responsive table only).
 
