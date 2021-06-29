@@ -24,7 +24,7 @@
 <meta name="author" content="Ben Best, Jai Ranganathan" />
 
 
-<meta name="date" content="2021-06-26" />
+<meta name="date" content="2021-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -219,10 +219,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><strong>Javascript is used in html pages via the <code>&lt;script&gt;</code> tag.</strong> Using your handy-dandy code editor, take a look at the infographic.html file that is contained within the Infographic example folder that you just downloaded. There, you’ll see that a html page can draw upon Javascript in two ways.</li>
 </ol>
-<p>1A. Loading an external Javascript library. Line 12 of the infographic.html file reads as follows:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="getting-started.html#cb1-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
-<p>This line loads in a bunch of Javascript code written elsewhere - which is known as a Javascript library. In this case, we’re loading in Bootstrap - a well-known Javascript library</p>
-<p>1B. Writing Javascript code directly within a page. Lines 32-41 of the infographic.html file read as follows:</p>
+<p>1A. Loading an external Javascript library. Lines 12-14 of the infographic.html file reads as follows:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="getting-started.html#cb1-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span> </span>
+<span id="cb1-2"><a href="getting-started.html#cb1-2"></a><span class="ot">  integrity=</span><span class="st">&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;</span> </span>
+<span id="cb1-3"><a href="getting-started.html#cb1-3"></a><span class="ot">  crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
+<p>These lines loads in a bunch of Javascript code written elsewhere - which is known as a Javascript library. In this case, we’re loading in Bootstrap - a well-known Javascript library</p>
+<p>1B. Writing Javascript code directly within a page. Lines 39-48 of the infographic.html file read as follows:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="getting-started.html#cb2-1"></a><span class="kw">&lt;script&gt;</span></span>
 <span id="cb2-2"><a href="getting-started.html#cb2-2"></a>    <span class="at">link_svg</span>(<span class="op">{</span></span>
 <span id="cb2-3"><a href="getting-started.html#cb2-3"></a>        <span class="dt">svg</span><span class="op">:</span> <span class="st">&quot;illustrator_example.svg&quot;</span><span class="op">,</span> </span>

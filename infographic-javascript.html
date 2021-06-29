@@ -24,7 +24,7 @@
 <meta name="author" content="Ben Best, Jai Ranganathan" />
 
 
-<meta name="date" content="2021-06-26" />
+<meta name="date" content="2021-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -213,23 +213,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>In order for <code>link_svg()</code> to work, it relies upon other Javascript and CSS libraries that must be loaded prior to the InfographiqJS Javascript being loaded. These other libraries are known as the <strong>dependencies</strong> for InfographiqJS.</p>
 <p><code>link_svg()</code> Dependencies:</p>
 <ol style="list-style-type: decimal">
-<li><p><a href="https://jquery.com/">jQuery (version 1.9.1)</a>.</p></li>
+<li><p><a href="https://jquery.com/">jQuery (version 3.6.0)</a>.</p></li>
 <li><p><a href="https://d3js.org/">D3 (version 5)</a>.</p></li>
 <li><p><a href="https://fontawesome.com/">Font Awesome (version 4.7)</a>.</p></li>
-<li><p><a href="https://getbootstrap.com/docs/3.3/">Bootstrap (version 3.3.5)</a>. Note that Bootstrap, which is a framework used for layout, is more of a pseudo-dependency for InfographiqJS. InfographiqJS does not strictly require Bootstrap to run, but we highly recommend its use for layout and our examples have Bootstrap embedded.</p></li>
+<li><p><a href="https://getbootstrap.com/docs/3.4/javascript/">Bootstrap (version 3.4.1)</a>. Note that Bootstrap, which is a framework used for layout, is more of a pseudo-dependency for InfographiqJS. InfographiqJS does not strictly require Bootstrap to run, but we highly recommend its use for layout and our examples have Bootstrap embedded.</p></li>
 </ol>
 </div>
 <div id="example" class="section level2">
 <h2><span class="header-section-number">5.2</span> Example</h2>
-<p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 9-15 in the <code>&lt;head&gt;</code> section of the HTML, which read in as follows, load in the dependencies for InfographiqJS.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="infographic-javascript.html#cb5-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://code.jquery.com/jquery-1.9.1.min.js&quot;</span></span>
-<span id="cb5-2"><a href="infographic-javascript.html#cb5-2"></a><span class="ot">    integrity=</span><span class="st">&quot;sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=&quot;</span></span>
-<span id="cb5-3"><a href="infographic-javascript.html#cb5-3"></a><span class="ot">    crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
-<span id="cb5-4"><a href="infographic-javascript.html#cb5-4"></a><span class="kw">&lt;script</span><span class="ot"> src=</span> <span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
-<span id="cb5-5"><a href="infographic-javascript.html#cb5-5"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://d3js.org/d3.v5.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
-<span id="cb5-6"><a href="infographic-javascript.html#cb5-6"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb5-7"><a href="infographic-javascript.html#cb5-7"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css&quot;</span><span class="ot"> integrity=</span><span class="st">&quot;sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==&quot;</span><span class="ot"> crossorigin=</span><span class="st">&quot;anonymous&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
-<p>Lines 31-41 of the HTML are where we load in the InfographiqJS Javascript and CSS. We also call the InfographiqJS function <code>link_svg()</code>. This placement is very important: the InfographiqJS Javascript, CSS, and <code>link_svg()</code> must show up at the bottom of the <code>&lt;body&gt;</code> of the HTML.</p>
+<p>To get started, if you haven’t do so already, <a href="https://marinebon.org/infographiqJS/infographiq_example.zip">download the example folder</a> and unzip it. In the example folder, you’ll find a file called “infographic.html”, which you can also see <a href="https://marinebon.org/infographiqJS/infographiq_example/infographic.html">here</a>. Open infographic.html in your handy-dandy code editor. Lines 9-21 in the <code>&lt;head&gt;</code> section of the HTML, which read in as follows, load in the dependencies for InfographiqJS.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="infographic-javascript.html#cb5-1"></a>    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;</span></span>
+<span id="cb5-2"><a href="infographic-javascript.html#cb5-2"></a><span class="ot">      integrity=</span><span class="st">&quot;sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=&quot;</span></span>
+<span id="cb5-3"><a href="infographic-javascript.html#cb5-3"></a><span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-4"><a href="infographic-javascript.html#cb5-4"></a>    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js&quot;</span> </span>
+<span id="cb5-5"><a href="infographic-javascript.html#cb5-5"></a><span class="ot">      integrity=</span><span class="st">&quot;sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd&quot;</span> </span>
+<span id="cb5-6"><a href="infographic-javascript.html#cb5-6"></a><span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-7"><a href="infographic-javascript.html#cb5-7"></a>    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://d3js.org/d3.v5.min.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-8"><a href="infographic-javascript.html#cb5-8"></a>    <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css&quot;</span> </span>
+<span id="cb5-9"><a href="infographic-javascript.html#cb5-9"></a><span class="ot">      integrity=</span><span class="st">&quot;sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu&quot;</span> </span>
+<span id="cb5-10"><a href="infographic-javascript.html#cb5-10"></a><span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-11"><a href="infographic-javascript.html#cb5-11"></a>    <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css&quot;</span> </span>
+<span id="cb5-12"><a href="infographic-javascript.html#cb5-12"></a><span class="ot">      integrity=</span><span class="st">&quot;sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==&quot;</span> </span>
+<span id="cb5-13"><a href="infographic-javascript.html#cb5-13"></a><span class="ot">      crossorigin=</span><span class="st">&quot;anonymous&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
+<p>Lines 37-48 of the HTML are where we load in the InfographiqJS Javascript and CSS. We also call the InfographiqJS function <code>link_svg()</code>. This placement is very important: the InfographiqJS Javascript, CSS, and <code>link_svg()</code> must show up at the bottom of the <code>&lt;body&gt;</code> of the HTML.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="infographic-javascript.html#cb6-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&#39;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js&#39;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
 <span id="cb6-2"><a href="infographic-javascript.html#cb6-2"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.css&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb6-3"><a href="infographic-javascript.html#cb6-3"></a><span class="kw">&lt;script&gt;</span></span>
