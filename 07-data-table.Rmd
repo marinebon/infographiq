@@ -10,13 +10,13 @@ In order for `link_table()` to work, it relies upon other Javascript and CSS lib
 
 `link_table()` Dependencies:
 
-1.  [jQuery (version 3.5.1)](https://jquery.com/).
+1.  [jQuery (version 3.6.0)](https://jquery.com/).
 
-2.  [D3 (version 6)](https://d3js.org/).
+2.  [D3 (version 5)](https://d3js.org/).
 
 3.  [DataTables (version 1.10)](https://datatables.net/).
 
-4.  [Font Awesome (version 5.11)](https://fontawesome.com/).
+4.  [Font Awesome (version 4.7)](https://fontawesome.com/).
 
 ## Function parameter {#parameters}
 
@@ -55,11 +55,15 @@ First off, we title the page and define an empty `<table>` container. `link_tabl
 Next, we define another empty container called "modal1". This container is not visible when the page is first loaded, but will be used display the modal content. When the user clicks on a given row, `link_table()` fills in the modal container with the relevant content (based on data in that row) and then makes the container visible. When the user clicks out of the modal container, `link_table()` makes that container invisible again.
 
 ``` {.html}
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+  integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+  crossorigin="anonymous" />
 <script src='https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq.js'></script>
 <link rel="stylesheet" href="https://marinebon.org/infographiqJS/libs/infographiq_latest/infographiq_table.css"> 
 <script>

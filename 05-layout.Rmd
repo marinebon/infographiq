@@ -2,7 +2,7 @@
 
 The Infographiq approach uses Bootstrap for HTML page layout. [Bootstrap](https://getbootstrap.com/docs/3.4/javascript/) is a widely-used Javascript library for controlling layout. In this section of the guide, we give a brief overview to how Bootstrap works, within the Infographiq context. For a much more extensive Bootstrap tutorial, click [here](https://www.w3schools.com/bootstrap/bootstrap_ver.asp).
 
-To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "infographic.html", which you can also see [here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open infographic.html in your handy-dandy code editor. Lines 18-28 in the `<body>` section of the HTML read as follows:
+To get started, if you haven't do so already, [download the example folder](https://marinebon.org/infographiqJS/infographiq_example.zip) and unzip it. In the example folder, you'll find a file called "infographic.html", which you can also see [here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). Open infographic.html in your handy-dandy code editor. Lines 24-34 in the `<body>` section of the HTML read as follows:
 
 ``` {.html}
 <!-- define bootstrap layout that will contain the infographic -->
