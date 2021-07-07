@@ -28,13 +28,15 @@ In the Layers panel, we can see that the "text" layer contains several elements:
 
 ![](illustrator3.png)
 
-There are two essential things here:
+There are three essential things here:
 
 A. All of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#illustrator_raster).
 
 B. None of the elements within this layer are named "text". The following (where one of the elements is named text) is not allowed:
 
 ![](illustrator4.png)
+
+C. Double check that the font you select for the text elements displays well in a browser. The default font for Illustrator is often "Myriad Pro", which does not display well. There are many great alternatives, with one being "Arial".
 
 2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image.
 
