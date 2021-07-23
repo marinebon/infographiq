@@ -32,3 +32,4 @@ responsive-data-tables
 how_works
 data
 csv_location
+organization-of-infographiq-components
