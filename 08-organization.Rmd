@@ -1,0 +1,39 @@
+# Organization of Infographiq components
+
+The components of Infographiq are distributed across several GitHub repositories. The organization of these repositories are described in this section of the guide, via the table below.
+
+In the table, you can see that the rows are divided into **Builders** and **Instances**:
+
+-   Builders: GitHub repositories that contain the building blocks of the Infographiq functionality.
+
+-   Instances: GitHub repositories where Infographiq is being used to display scientific data.
+
+Also in the table below, you can see that the repositories are divided across three columns:
+
+-   MBON: [The Marine Biodiversity Observation Network](https://marinebon.org/) is a growing global initiative composed of regional networks of scientists, resource managers, and end-users working to integrate data from existing long-term programs to improve our understanding of changes and connections between marine biodiversity and ecosystem functions.
+
+-   NOAA-ONMS: [NOAA's Office of National Marine Sanctuaries](https://sanctuaries.noaa.gov/) serves as the trustee for a network of underwater parks encompassing more than 600,000 square miles of marine and Great Lakes waters. The network includes a system of 15 national marine sanctuaries and Papahānaumokuākea and Rose Atoll marine national monuments.
+
+-   NOAA-IEA: Through an integrated science approach, the [NOAA Integrated Ecosystem Assessment program](https://www.integratedecosystemassessment.noaa.gov/) balances the needs of nature and society for current and future generations, supporting diverse marine resource management objectives in an ecosystem context.
+
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                 | MBON                                                  | NOAA-ONMS                                                                       | NOAA-IEA                                                                                   |
++=================+=======================================================+=================================================================================+============================================================================================+
+| **Builders**    | [infographiqJS](https://marinebon.org/infographiqJS/) | [onmsR](https://noaa-onms.github.io/onmsR/)                                     | [plotJS-extra](https://github.com/noaa-iea/plotJS-extra)                                   |
+|                 |                                                       |                                                                                 |                                                                                            |
+|                 | (Javascript library)                                  | (R library)                                                                     | (Javascript library)                                                                       |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                 | [infographiqR](https://marinebon.org/infographiqR/)   |                                                                                 |                                                                                            |
+|                 |                                                       |                                                                                 |                                                                                            |
+|                 | (R library)                                           |                                                                                 |                                                                                            |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                 | [infographiq](https://marinebon.org/infographiq/)     |                                                                                 |                                                                                            |
+|                 |                                                       |                                                                                 |                                                                                            |
+|                 | (manual)                                              |                                                                                 |                                                                                            |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+| **Instances**   |                                                       | [Channel Islands National Marine Sanctuary](https://noaa-onms.github.io/cinms/) | [Florida Keys National Marine Sanctuary](https://noaa-iea.github.io/fk-esr-info/home.html) |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                 |                                                       | [Olympic Coast National Marine Sanctuary](https://noaa-onms.github.io/ocnms/)   | [Alaska Integrated Ecosystem Assessment](https://noaa-iea.github.io/ak-info/)              |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
+|                 |                                                       | [Sound Monitoring](https://sanctuaries.noaa.gov/science/monitoring/sound/)      | [Responsive Tables](https://marinebon.org/infographiq/responsive-data-tables.html)         |
++-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------+
