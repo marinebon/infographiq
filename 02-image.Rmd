@@ -40,7 +40,7 @@ C. Double check that the font you select for the text elements displays well in 
 
 2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image.
 
-If you check out the Layers panel for "icons", you'll see that it contains five sublayers (chartexample1 through 5):
+If you check out the Layers panel for "icons", you'll see that it contains six sublayers (chartexample1 through 6):
 
 ![](illustrator5.png)
 
@@ -126,7 +126,7 @@ This is the required layer order of an Inkscape image.
 
 1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). The essential thing here is that all of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#inkscape_raster).
 
-2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you check out the Layers panel for "icons" (see image just above), you'll see that it contains five sublayers (chartexample1 through 5). Each of these sublayers defines a single clickable component of the image.
+2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you check out the Layers panel for "icons" (see image just above), you'll see that it contains six sublayers (chartexample1 through 6). Each of these sublayers defines a single clickable component of the image.
 
     -   The names of these sublayers should not contain spaces, commas, or be called "text".
 
