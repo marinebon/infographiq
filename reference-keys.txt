@@ -27,7 +27,8 @@ what_is
 modal1
 modal2
 modal3
-example-4-responsive-graph-with-google-charts-2-of-2
+example-4-responsive-graph-with-google-charts-2-of-3
+example-5-responsive-graph-with-google-charts-3-of-3
 responsive-data-tables
 how_works
 data
