@@ -90,3 +90,9 @@ There are multiple parameters for the function `link_svg()`, which are detailed 
 -   **text_toggle (optional)**: the type of text toggle to be displayed above the table of contents. Allowable values are: 'none', 'toggle_off', and 'toggle_on'. The default value is 'none'. To see the effect of changing text_toggle, change the value for "Explanatory text toggle" in the [demo](https://marinebon.org/infographiqJS/demo.html).
 
 -   **svg_filter (optional)**: if the link table contains the data for multiple infographic images, which rows of the link table should be included. This parameter should only be set if the "svg" column exists in the link table. Only rows in the link table where the "svg" column value matches svg_filter will be included.
+
+-   **full_screen_button (optional):** whether a full screen button for the infographic should be displayed above the table of contents (see red box in image below). Allowable values are true and false (note: no quotation marks). The default value is true. To see the effect of changing full_screen_button, change the value for "Full screen button" in the [demo](https://marinebon.org/infographiqJS/demo.html). Not all web browsers support full screen for html elements and, if the client's browser does not support full screen, then the button won't appear (even if full_screen_button is set to true).
+
+    ![](full_screen_button.png)
+
+-   **button_text (optional):** the text displayed in the full screen button. The default value is 'Full Screen'.
