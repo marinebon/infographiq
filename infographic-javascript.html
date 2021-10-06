@@ -24,7 +24,7 @@
 <meta name="author" content="Ben Best, Jai Ranganathan" />
 
 
-<meta name="date" content="2021-07-26" />
+<meta name="date" content="2021-10-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -269,6 +269,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p><strong>section_colors (optional)</strong>: the list of colors to be used for different categories of clickable elements. The value expected is an array of <a href="https://www.w3schools.com/colors/default.asp">CSS-compliant colors</a>. The default value for section_colors is [‘LightGreen’, ‘MediumOrchid’, ‘Orange’]. section_colors is only used if colored_sections is set to true. The number of array elements in section_colors does not have to match the number of sections. If there are fewer array elements than sections, then the array elements are repeated over sections. If there are more array elements than sections, the extra array elements are ignored. To see the effect of changing section_colors, change the value for “Colored section headers” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
 <li><p><strong>text_toggle (optional)</strong>: the type of text toggle to be displayed above the table of contents. Allowable values are: ‘none’, ‘toggle_off’, and ‘toggle_on’. The default value is ‘none’. To see the effect of changing text_toggle, change the value for “Explanatory text toggle” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>.</p></li>
 <li><p><strong>svg_filter (optional)</strong>: if the link table contains the data for multiple infographic images, which rows of the link table should be included. This parameter should only be set if the “svg” column exists in the link table. Only rows in the link table where the “svg” column value matches svg_filter will be included.</p></li>
+<li><p><strong>full_screen_button (optional):</strong> whether a full screen button for the infographic should be displayed above the table of contents (see red box in image below). Allowable values are true and false (note: no quotation marks). The default value is true. To see the effect of changing full_screen_button, change the value for “Full screen button” in the <a href="https://marinebon.org/infographiqJS/demo.html">demo</a>. Not all web browsers support full screen for html elements and, if the client’s browser does not support full screen, then the button won’t appear (even if full_screen_button is set to true).</p>
+<p><img src="full_screen_button.png" /></p></li>
+<li><p><strong>button_text (optional):</strong> the text displayed in the full screen button. The default value is ‘Full Screen’.</p></li>
 </ul>
 
 </div>
