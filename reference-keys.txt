@@ -21,6 +21,8 @@ infographic-javascript
 dependencies
 example
 parameters
+required-parameters
+optional-parameters
 html-layout-with-bootstrap
 modal-windows
 what_is
