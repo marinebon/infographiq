@@ -41,7 +41,7 @@ In [infographic.html](https://marinebon.org/infographiqJS/infographiq_example/in
 
 If you open that file in your code editor, you'll see that in the `<head>` the necessary Highcharts Javascripts libraries are loaded and a CSS style is described. In the `<body>`, the container that will hold the Highcharts figure is defined and then the Highcharts function that will generate the figure is run.
 
-This is the simplest possible example of what can be done with Highcharts. Though it is set up to be a template for you to use, there is world more than can be done with Highcharts ([click here](https://www.highcharts.com/demo) to see a gallery of the possibilities). And [here is a complete Highcharts tutorial](https://www.highcharts.com/docs/index).
+This is the simplest possible example of what can be done with Highcharts. Though it is set up to be a template for you to use, there is a world more than can be done with Highcharts ([click here](https://www.highcharts.com/demo) to see a gallery of the possibilities). And [here is a complete Highcharts tutorial](https://www.highcharts.com/docs/index).
 
 ## Example 3: responsive graph with Google Charts (1 of 3) {#modal3}
 
