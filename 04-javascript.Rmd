@@ -100,3 +100,5 @@ There are multiple parameters for the function `link_svg()`, which are detailed 
     ![](full_screen_button.png)
 
 -   **button_text:** the text displayed in the full screen button. The default value is 'Full Screen'.
+
+-   **tooltip**: whether a tooltip should appear when the mouse hovers over a clickable element in the infographic. Allowable values are true and false (note: no quotation marks). The default value is true.
