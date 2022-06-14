@@ -22,7 +22,7 @@ In order for `link_table()` to work, it relies upon other Javascript and CSS lib
 
 There is one parameter for `link_table()` and it is required:
 
--   `csvLink`: URL of data (saved in csv format) to be displayed as a responsive table. This data needs to be set up in a very particular way and we go into it further down on this page.
+-   `csvLink`: URL of data (saved in csv format) to be displayed as a responsive table. The URL must be given as a absolute file path (meaning, for example, `https://www.noaa.gov/example.csv` not `example.csv`). The data in csv file needs to be set up in a very particular way and we go into it further down on this page.
 
 ## How `link_table()` works {#how_works}
 
