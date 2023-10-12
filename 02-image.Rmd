@@ -2,9 +2,9 @@
 
 Infographiq works with vector-based images that are set up in a very specific way. Here we provide instructions for two vector graphics packages: [Adobe Illustrator](https://www.adobe.com/products/illustrator.html) (requires a paid subscription) and [Inkscape](https://inkscape.org/) (free).
 
-You'll also need the example folder for Infographiq, which provides a full working example that you can fiddle around with. We'll be referring to this folder extensively in this guide and you can [download a compressed version here](https://marinebon.org/infographiqJS/infographiq_example.zip). Just unzip the folder when you get it.
+You'll also need the example folder for Infographiq, which provides a full working example that you can fiddle around with. We'll be referring to this folder extensively in this guide and you can [download a compressed version here](https://marinebon.github.io/infographiqJS/infographiq_example.zip). Just unzip the folder when you get it.
 
-You can see the working example [in action here](https://marinebon.org/infographiqJS/infographiq_example/infographic.html).
+You can see the working example [in action here](https://marinebon.github.io/infographiqJS/infographiq_example/infographic.html).
 
 ## Adobe Illustrator {#illustrator}
 
@@ -22,7 +22,7 @@ This is the required layer order of an Infographiq image.
 
 ### Layer organization {#illustrator_layers}
 
-1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html).
+1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.github.io/infographiqJS/infographiq_example/infographic.html).
 
 In the Layers panel, we can see that the "text" layer contains several elements:
 
@@ -124,7 +124,7 @@ This is the required layer order of an Inkscape image.
 
 ### Layer organization
 
-1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.org/infographiqJS/infographiq_example/infographic.html). The essential thing here is that all of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#inkscape_raster).
+1.  text: This first layer is optional and, if present, must be called lower case "text". This layer contains additional explanatory text and graphics for the image that the Infographiq Javascript can toggle on and off. To see this in action, click the "Text in image" button in the upper right of our [Infographiq example](https://marinebon.github.io/infographiqJS/infographiq_example/infographic.html). The essential thing here is that all of the elements are vector-based (nothing raster-based). If you happen to have raster-based elements in your image (or are not sure), we can tell you what to do about it in this section of this document: [dealing with raster-based elements](#inkscape_raster).
 
 2.  icons. The second layer is required and contains all of the clickable elements in the image. This layer can be named anything, except for "text" or the name of any clickable element in the image. If you check out the Layers panel for "icons" (see image just above), you'll see that it contains six sublayers (chartexample1 through 6). Each of these sublayers defines a single clickable component of the image.
 
